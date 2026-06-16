@@ -112,6 +112,78 @@ body {
     padding: 0.5rem;
 }
 
+.chat-error {
+    color: #b42318;
+}
+
+.chat-markdown {
+    display: inline-block;
+    width: 100%;
+}
+
+.chat-markdown > :first-child {
+    margin-top: 0;
+}
+
+.chat-markdown > :last-child {
+    margin-bottom: 0;
+}
+
+.chat-markdown p {
+    margin: 0 0 0.5rem;
+}
+
+.chat-markdown ul,
+.chat-markdown ol {
+    margin: 0 0 0.5rem;
+    padding-left: 1.4rem;
+}
+
+.chat-markdown pre {
+    background: #1f2430;
+    color: #e6e9ef;
+    padding: 0.6rem 0.75rem;
+    border-radius: 0.4rem;
+    overflow-x: auto;
+}
+
+.chat-markdown code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 0.9em;
+}
+
+.chat-markdown :not(pre) > code {
+    background: #eceff4;
+    padding: 0.1rem 0.3rem;
+    border-radius: 0.25rem;
+}
+
+.chat-citations {
+    margin-top: 0.5rem;
+    padding-top: 0.4rem;
+    border-top: 1px solid #d8dde4;
+    font-size: 0.85rem;
+}
+
+.chat-citations-label {
+    color: #57606a;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.chat-citations-list {
+    list-style: none;
+    margin: 0.25rem 0 0;
+    padding-left: 0;
+}
+
+.chat-citation-rank {
+    color: #57606a;
+    font-variant-numeric: tabular-nums;
+    margin-right: 0.35rem;
+}
+
 .doc-table {
     border-collapse: collapse;
     width: 100%;

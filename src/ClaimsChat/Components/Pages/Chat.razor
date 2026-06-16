@@ -1,22 +1,60 @@
 @page "/chat"
-@using Microsoft.Extensions.AI
-@inject IChatClient ChatClient
+@using ClaimsChat.Services.SealedBox
+@using Markdig
+@inject IGroundedChatService ChatService
 
 <PageTitle>Chat — ClaimsChat</PageTitle>
 
 <h1>Chat</h1>
 
 <p class="muted">
-    Placeholder chat backed by a stub model. Ticket T3 adds lexical retrieval and
-    T4 swaps the stub for the real Azure AI Foundry model with streaming + citations.
+    Ask a question about the claim documents. Lexical retrieval selects the most relevant
+    passages, the model answers from them, and the answer streams back with its sources.
 </p>
 
 <div class="chat-log">
-    @foreach (var msg in _messages)
+    @foreach (var entry in _entries)
     {
-        <div class="chat-msg @(msg.Role == ChatRole.User ? "user" : "assistant")">
-            <strong>@(msg.Role == ChatRole.User ? "You" : "Assistant"):</strong>
-            <span>@msg.Text</span>
+        <div class="chat-msg @(entry.IsUser ? "user" : "assistant")">
+            <strong>@(entry.IsUser ? "You" : "Assistant"):</strong>
+            @if (entry.IsUser || entry.IsError)
+            {
+                <span class="@(entry.IsError ? "chat-error" : null)">@entry.Text</span>
+            }
+            else
+            {
+                <span class="chat-markdown">@RenderMarkdown(entry.Text)</span>
+            }
+
+            @if (!entry.IsUser && entry.Citations is { Count: > 0 })
+            {
+                var cites = entry.Citations
+                    .GroupBy(c => (c.DocumentId, c.SectionTitle))
+                    .Select(g => g.First())
+                    .ToList();
+
+                <div class="chat-citations">
+                    <span class="chat-citations-label">Sources (ranked)</span>
+                    <ol class="chat-citations-list">
+                        @for (var i = 0; i < cites.Count; i++)
+                        {
+                            var cite = cites[i];
+                            <li>
+                                <span class="chat-citation-rank">@(i + 1))</span>
+                                <a href="@($"documents/{cite.DocumentId}")">@cite.DocumentTitle</a>
+                                @if (!string.IsNullOrWhiteSpace(cite.ClaimNumber))
+                                {
+                                    <span class="muted"> · Claim @cite.ClaimNumber</span>
+                                }
+                                @if (!string.IsNullOrWhiteSpace(cite.SectionTitle))
+                                {
+                                    <span class="muted"> · @cite.SectionTitle</span>
+                                }
+                            </li>
+                        }
+                    </ol>
+                </div>
+            }
         </div>
     }
 </div>
@@ -28,9 +66,17 @@
 </div>
 
 @code {
-    private readonly List<ChatMessage> _messages = new();
+    // Markdown rendering is constrained to safe inline/block formatting; DisableHtml() drops any
+    // raw HTML the model might emit, so the streamed answer cannot inject markup.
+    private static readonly MarkdownPipeline MarkdownPipeline =
+        new MarkdownPipelineBuilder().DisableHtml().Build();
+
+    private readonly List<Entry> _entries = new();
     private string _input = string.Empty;
     private bool _busy;
+
+    private static MarkupString RenderMarkdown(string text) =>
+        (MarkupString)Markdown.ToHtml(text ?? string.Empty, MarkdownPipeline);
 
     private async Task Send()
     {
@@ -40,13 +86,34 @@
         }
 
         _busy = true;
-        _messages.Add(new ChatMessage(ChatRole.User, _input.Trim()));
+        var question = _input.Trim();
+        _entries.Add(new Entry { IsUser = true, Text = question });
         _input = string.Empty;
+
+        var answer = new Entry { IsUser = false, Text = string.Empty };
+        _entries.Add(answer);
 
         try
         {
-            var response = await ChatClient.GetResponseAsync(_messages);
-            _messages.AddRange(response.Messages);
+            var result = await ChatService.AskAsync(question);
+            answer.Citations = result.Citations;
+
+            await foreach (var chunk in result.TextUpdates)
+            {
+                answer.Text += chunk;
+                StateHasChanged();
+            }
+
+            if (string.IsNullOrEmpty(answer.Text))
+            {
+                answer.Text = "(The model returned no answer.)";
+            }
+        }
+        catch (Exception ex)
+        {
+            answer.IsError = true;
+            answer.Citations = null;
+            answer.Text = $"Something went wrong calling the model: {ex.Message}";
         }
         finally
         {
@@ -60,5 +127,13 @@
         {
             await Send();
         }
+    }
+
+    private sealed class Entry
+    {
+        public bool IsUser { get; init; }
+        public string Text { get; set; } = string.Empty;
+        public bool IsError { get; set; }
+        public IReadOnlyList<RetrievedPassage>? Citations { get; set; }
     }
 }

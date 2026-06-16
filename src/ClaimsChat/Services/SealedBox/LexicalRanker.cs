@@ -21,7 +21,7 @@ public static class LexicalRanker
     };
 
     public static IReadOnlyList<RetrievedPassage> Rank(
-        IReadOnlyList<DocumentPassage> passages, string query, int maxPassages = 3)
+        IReadOnlyList<DocumentPassage> passages, string query, int maxPassages = 5)
     {
         if (passages.Count == 0 || string.IsNullOrWhiteSpace(query) || maxPassages <= 0)
         {

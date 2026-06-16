@@ -111,22 +111,28 @@ from the seeded documents using lightweight lexical/keyword matching (SPEC §4.3
 
 ---
 
-## T4 — Real AI chat (Foundry / Haiku) with citations  ·  `TODO`
+## T4 — Real AI chat with citations  ·  `DONE`
 
-**Goal:** Replace the stub with a real `IChatClient` (Azure AI Foundry, Claude Haiku 4.5 via
-`Microsoft.Extensions.AI`). The chat page assembles retrieved passage(s) + question, calls the model, and
-**streams** the answer back with a **source citation** (SPEC §4.3, §6).
+**Shipped:** Azure OpenAI **gpt-5.4** (not Foundry/Haiku — the provider/model changed during the build;
+deployment name is a config value, still swappable). `GroundedChatService` + `GroundedPrompt` assemble the
+retrieved passages and question, stream the answer, and render **ranked numbered citations**. Assistant
+markdown is rendered via **Markdig** (raw HTML disabled). Stub fallback preserved when no key is configured.
+
+**Goal:** Replace the stub with a real `IChatClient` (via `Microsoft.Extensions.AI`). The chat page assembles
+retrieved passage(s) + question, calls the model, and **streams** the answer back with a **source
+citation** (SPEC §4.3, §6).
 
 **Depends on:** T3.
 **Prerequisite (external):** Foundry chat deployment confirmed with quota (SPEC §9) and a key available
 out-of-band (SPEC §6). Until then this ticket can be built against the stub and flipped via config/DI.
 
 **Scope**
-- Wire `Microsoft.Extensions.AI` `IChatClient` over Azure AI Inference; endpoint/model/key from config
-  (user-secrets or gitignored `appsettings.Development.json`), model swappable (Haiku 4.5 → GPT-5-nano).
+- Wire `Microsoft.Extensions.AI` `IChatClient` over Azure OpenAI (`Azure.AI.OpenAI`); endpoint/deployment/key
+  from config (user-secrets or gitignored `appsettings.Development.json`), model swappable via deployment name.
 - Prompt assembly: retrieved passage(s) + question, grounded-answer instruction.
 - **Streaming** responses in the Blazor Server chat UI.
 - Render the **source citation** alongside the answer.
+- Render assistant **markdown** as HTML via **Markdig** (raw HTML disabled for safety).
 - Graceful fallback to the stub when no key is configured (keeps clone-and-run intact for non-AI work).
 
 **Out of scope:** chat history persistence (T5), retries/rate-limit UX polish (note throttling per SPEC §7 but keep simple).

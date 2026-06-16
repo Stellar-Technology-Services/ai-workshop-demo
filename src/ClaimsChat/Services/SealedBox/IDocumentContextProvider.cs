@@ -9,5 +9,5 @@ namespace ClaimsChat.Services.SealedBox;
 public interface IDocumentContextProvider
 {
     Task<IReadOnlyList<RetrievedPassage>> RetrieveAsync(
-        string query, int maxPassages = 3, CancellationToken cancellationToken = default);
+        string query, int maxPassages = 5, CancellationToken cancellationToken = default);
 }

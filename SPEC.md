@@ -29,8 +29,8 @@ These are intentionally **out of scope for v1**:
 | Language / runtime | **C# / .NET 10 LTS**, pinned via `global.json` | Matches the audience (C#/.NET = 18/19); current LTS (supported to Nov 2028), installs side-by-side with any existing .NET on locked-down corporate Windows machines |
 | UI | **Blazor Server** | Keeps streaming chat in pure C# (audience is JS-light); single language end-to-end |
 | Persistence | **EF Core + SQLite** | Real ORM the team knows, zero infra, cross-platform clone-and-run; SQL Server is a connection-string swap if ever wanted |
-| Chat AI | **Azure AI Foundry**, model **Claude Haiku 4.5** (swappable to GPT-5-nano via config) | Enterprise-relatable; model is a config value |
-| AI client | **`Microsoft.Extensions.AI` (`IChatClient`)** over the Azure AI Inference SDK | Idiomatic .NET abstraction; model/provider stays a config value |
+| Chat AI | **Azure OpenAI**, model **gpt-5.4** (deployment name is a config value; model swappable) | Enterprise-relatable; model is a config value |
+| AI client | **`Microsoft.Extensions.AI` (`IChatClient`)** over the Azure OpenAI SDK (`Azure.AI.OpenAI`) | Idiomatic .NET abstraction; model/provider stays a config value |
 | Retrieval | **Lightweight lexical / keyword matching** behind `IDocumentContextProvider` | No embeddings; bounds tokens; gives grounded "answer + citation"; vector retrieval is a clean future swap |
 
 ## 4. Core functionality (v1)
@@ -59,9 +59,10 @@ Blazor Server UI (streaming chat)   ← teachable surface
 
 ## 6. AI configuration & secrets
 
-- A **shared Azure AI Foundry key**, distributed **out-of-band** at workshop time.
-- Stored in **.NET user-secrets** or a **gitignored** `appsettings.Development.json`. **Never committed.**
-- Config values: endpoint, deployment/model name, key. Model is swappable (Haiku 4.5 → GPT-5-nano).
+- A **shared Azure OpenAI key**, distributed **out-of-band** at workshop time.
+- Stored in a **gitignored** `appsettings.Development.json` (copy the committed
+  `appsettings.Development.example.json` template) or **.NET user-secrets**. **Never committed.**
+- Config values (`AzureOpenAI` section): `Endpoint` (base host), `Deployment` name, `Key`. Model is swappable via the deployment name.
 
 ## 7. Capacity planning (~21 devs)
 
@@ -82,7 +83,7 @@ Blazor Server UI (streaming chat)   ← teachable surface
 ## 9. Pre-build verification (confirm before/while building)
 
 1. Can every attendee install the **.NET 10 SDK** on their (likely locked-down) Windows machine? (Installs side-by-side with any existing .NET; `global.json` pins .NET 10, so .NET 10 specifically is required.)
-2. Confirm the **Azure AI Foundry chat deployment** (Haiku 4.5) exists with adequate quota (see §7).
+2. Confirm the **Azure OpenAI chat deployment** (gpt-5.4) exists with adequate quota (see §7).
 3. Confirm the shared key distribution plan (out-of-band, never committed).
 
 ## 10. Deferred / parking lot (NOT v1)

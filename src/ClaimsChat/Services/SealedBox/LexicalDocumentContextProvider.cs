@@ -15,7 +15,7 @@ public sealed class LexicalDocumentContextProvider : IDocumentContextProvider
         _factory = factory;
 
     public async Task<IReadOnlyList<RetrievedPassage>> RetrieveAsync(
-        string query, int maxPassages = 3, CancellationToken cancellationToken = default)
+        string query, int maxPassages = 5, CancellationToken cancellationToken = default)
     {
         if (string.IsNullOrWhiteSpace(query))
         {

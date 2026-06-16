@@ -1,3 +1,5 @@
+using Azure;
+using Azure.AI.OpenAI;
 using ClaimsChat.Components;
 using ClaimsChat.Data;
 using ClaimsChat.Services.SealedBox;
@@ -17,12 +19,33 @@ var connectionString = builder.Configuration.GetConnectionString("Default")
 builder.Services.AddDbContextFactory<ClaimsChatDbContext>(options =>
     options.UseSqlite(connectionString));
 
-// SEALED BOX: the chat model. T1 registers a stub so the app runs without a key.
-// T4 replaces this registration with a real Azure AI Foundry client.
-builder.Services.AddSingleton<IChatClient, StubChatClient>();
+// SEALED BOX: the chat model. Use the real Azure OpenAI (gpt-5.4) client when the
+// AzureOpenAI config is present; otherwise fall back to the stub so a fresh clone
+// still boots and the Chat page works with no key (SPEC §6, §8). Endpoint is the
+// base host (e.g. https://<resource>.cognitiveservices.azure.com/) — the SDK adds the route.
+var aoaiEndpoint = builder.Configuration["AzureOpenAI:Endpoint"];
+var aoaiDeployment = builder.Configuration["AzureOpenAI:Deployment"];
+var aoaiKey = builder.Configuration["AzureOpenAI:Key"];
 
-// SEALED BOX: lexical retrieval over the seeded documents (consumed by chat in T4).
+if (!string.IsNullOrWhiteSpace(aoaiEndpoint)
+    && !string.IsNullOrWhiteSpace(aoaiDeployment)
+    && !string.IsNullOrWhiteSpace(aoaiKey))
+{
+    builder.Services.AddChatClient(_ =>
+        new AzureOpenAIClient(new Uri(aoaiEndpoint), new AzureKeyCredential(aoaiKey))
+            .GetChatClient(aoaiDeployment)
+            .AsIChatClient());
+}
+else
+{
+    builder.Services.AddChatClient(_ => new StubChatClient());
+}
+
+// SEALED BOX: lexical retrieval over the seeded documents.
 builder.Services.AddScoped<IDocumentContextProvider, LexicalDocumentContextProvider>();
+
+// SEALED BOX: grounded-chat orchestration (retrieve → assemble prompt → stream).
+builder.Services.AddScoped<IGroundedChatService, GroundedChatService>();
 
 var app = builder.Build();
 

@@ -38,8 +38,8 @@ If `dotnet --version` shows an older version, your shell is resolving a differen
 .NET install — make sure the .NET 10 install is first on your `PATH`.
 
 **Not needed** — no Docker, no SQL Server / LocalDB (file-based SQLite is bundled via
-NuGet), no Node.js. The shared Azure AI Foundry key is handed out **at the session** and
-isn't required to run the current build.
+NuGet), no Node.js. The shared Azure OpenAI key is handed out **at the session**; the app
+runs without it (the Chat page falls back to a stub model), so the dry run works key-free.
 
 **Heads-up for locked-down machines:** the first run restores NuGet packages from
 `api.nuget.org`. If a corporate proxy/firewall blocks it, restore fails — the dry run
@@ -56,15 +56,37 @@ dotnet run --project src/ClaimsChat
 Then open the URL printed in the console (e.g. `https://localhost:7xxx`).
 
 The SQLite database is created automatically on first run — no manual database
-step. **No AI key is required yet:** the current skeleton uses a stub chat model,
-so the Chat page echoes your input. Real Azure AI Foundry chat is added in a later
-ticket (see the plan).
+step. **No AI key is required to boot:** with no key configured the Chat page falls
+back to a stub model. Configure the key (below) to get real grounded answers.
 
-## AI configuration (later tickets)
+## AI configuration
 
-When the real chat model is wired up, the Azure AI Foundry key is supplied
-out-of-band and stored in **.NET user-secrets** or a **gitignored**
-`appsettings.Development.json` — **never committed**.
+The chat model is **Azure OpenAI (gpt-5.4)**, reached via `Microsoft.Extensions.AI`.
+Three values are needed: endpoint, deployment name, and key. They are supplied
+**out-of-band at the workshop** and must **never be committed**.
+
+To configure, copy the committed template to a gitignored file and fill it in:
+
+```bash
+cp src/ClaimsChat/appsettings.Development.example.json src/ClaimsChat/appsettings.Development.json
+# then edit appsettings.Development.json and paste the values handed out at the session
+```
+
+```json
+{
+  "AzureOpenAI": {
+    "Endpoint": "https://ifi-workshop-resource.cognitiveservices.azure.com/",
+    "Deployment": "<your-gpt-5.4-deployment-name>",
+    "Key": "<paste-key-at-workshop-time>"
+  }
+}
+```
+
+- `appsettings.Development.json` is **gitignored** — your pasted key never lands in git.
+- `Endpoint` is the **base host only** (no `/openai/...` path); the SDK adds the route.
+- Prefer **.NET user-secrets**? `dotnet user-secrets set "AzureOpenAI:Key" "..." --project src/ClaimsChat`
+  works too and overrides the file. Either way, nothing secret is committed.
+- Leave the values blank and the app simply uses the stub (clone-and-run stays intact).
 
 ## Project layout
 
