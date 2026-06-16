@@ -1,0 +1,29 @@
+# Build output
+bin/
+obj/
+[Dd]ebug/
+[Rr]elease/
+artifacts/
+
+# IDE / tooling
+.vs/
+.vscode/
+*.user
+*.suo
+*.userprefs
+
+# .NET
+*.nupkg
+project.lock.json
+
+# Local SQLite database (created on first run; never committed)
+*.db
+*.db-shm
+*.db-wal
+
+# Secrets / local-only config (never committed) — see SPEC §6
+appsettings.Development.json
+
+# OS cruft
+.DS_Store
+Thumbs.db
