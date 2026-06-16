@@ -45,6 +45,11 @@ using (var scope = app.Services.CreateScope())
 {
     var db = scope.ServiceProvider.GetRequiredService<ClaimsChatDbContext>();
     db.Database.Migrate();
+
+    // Seed preset claims documents from the Documents folder into SQLite.
+    var seedLogger = scope.ServiceProvider.GetRequiredService<ILoggerFactory>()
+        .CreateLogger("DocumentSeeder");
+    DocumentSeeder.Seed(db, app.Environment.ContentRootPath, seedLogger);
 }
 
 app.Run();

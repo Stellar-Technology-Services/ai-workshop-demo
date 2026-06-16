@@ -1,10 +1,52 @@
 @page "/documents"
+@using ClaimsChat.Data
+@using Microsoft.EntityFrameworkCore
+@inject ClaimsChatDbContext Db
 
 <PageTitle>Documents — ClaimsChat</PageTitle>
 
 <h1>Documents</h1>
 
-<p class="muted">
-    Placeholder. Ticket T2 seeds the preset claims documents into SQLite and
-    lists them here with their metadata.
-</p>
+@if (_documents is null)
+{
+    <p class="muted">Loading…</p>
+}
+else if (_documents.Count == 0)
+{
+    <p class="muted">
+        No documents found. Add <code>.txt</code> files to
+        <code>src/ClaimsChat/Documents/</code> and restart.
+    </p>
+}
+else
+{
+    <p class="muted">@_documents.Count document(s) seeded from the Documents folder.</p>
+    <table class="doc-table">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Claim Number</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var doc in _documents)
+            {
+                <tr>
+                    <td><a href="@($"documents/{doc.Id}")">@doc.Title</a></td>
+                    <td>@(doc.ClaimNumber ?? "—")</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private List<Document>? _documents;
+
+    protected override async Task OnInitializedAsync()
+    {
+        _documents = await Db.Documents
+            .OrderBy(d => d.Title)
+            .ToListAsync();
+    }
+}

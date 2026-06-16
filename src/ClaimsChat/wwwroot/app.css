@@ -111,3 +111,34 @@ body {
     flex: 1;
     padding: 0.5rem;
 }
+
+.doc-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.doc-table th,
+.doc-table td {
+    text-align: left;
+    padding: 0.5rem 0.75rem;
+    border-bottom: 1px solid #e1e4e8;
+}
+
+.doc-table th {
+    color: #57606a;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.doc-body {
+    background: #f6f8fa;
+    border: 1px solid #e1e4e8;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    overflow-x: auto;
+    font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    white-space: pre;
+}

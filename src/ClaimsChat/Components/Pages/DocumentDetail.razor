@@ -1,0 +1,38 @@
+@page "/documents/{Id:int}"
+@using ClaimsChat.Data
+@using Microsoft.EntityFrameworkCore
+@inject ClaimsChatDbContext Db
+
+<PageTitle>@(_document?.Title ?? "Document") — ClaimsChat</PageTitle>
+
+<p><a href="documents">← Documents</a></p>
+
+@if (!_loaded)
+{
+    <p class="muted">Loading…</p>
+}
+else if (_document is null)
+{
+    <h1>Not found</h1>
+    <p class="muted">No document with id @Id.</p>
+}
+else
+{
+    <h1>@_document.Title</h1>
+    <p class="muted">Claim Number: @(_document.ClaimNumber ?? "—") · @_document.FileName</p>
+    <pre class="doc-body">@_document.Body</pre>
+}
+
+@code {
+    [Parameter]
+    public int Id { get; set; }
+
+    private Document? _document;
+    private bool _loaded;
+
+    protected override async Task OnInitializedAsync()
+    {
+        _document = await Db.Documents.FirstOrDefaultAsync(d => d.Id == Id);
+        _loaded = true;
+    }
+}
