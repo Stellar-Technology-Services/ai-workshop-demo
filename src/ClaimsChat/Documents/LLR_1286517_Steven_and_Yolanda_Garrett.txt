@@ -1,0 +1,129 @@
+================================================================================
+LARGE LOSS REPORT (LLR) — PROPERTY
+================================================================================
+
+Report Type: First Report
+Reinsurance Notified: Yes
+
+--------------------------------------------------------------------------------
+CLAIM OVERVIEW
+--------------------------------------------------------------------------------
+
+Name of Adjuster: Derek Holliday
+Claim Number: 1286517
+Name of Insured: Steven & Yolanda Garrett
+Policy Number: HOM2224180
+Policy Period: 07/12/2025 - 07/12/2026
+Agent Notified: Yes
+Name of Agency: Summit Insurance Associates
+Agency Location: Evansville, IN
+
+--------------------------------------------------------------------------------
+COVERAGE ISSUES
+--------------------------------------------------------------------------------
+
+The policy was in force on the date of loss. There appear to be no coverage concerns as windstorm is a covered peril. Applicable Forms: HO 0003, HO 0490, HO 0420, HOM 1015, HOM 1019. Coverages: Coverage A: $325,000 RCV with additional 20% AAOI endorsement, Coverage B: $32,500, Coverage C: $227,500 RCV, Coverage D: ALS - 12 months from DOL. Deductible: $2,500.00 wind/hail deductible applies.
+
+--------------------------------------------------------------------------------
+LOSS INFORMATION
+--------------------------------------------------------------------------------
+
+Date of Loss: 04/08/2026
+Date Reported: 04/08/2026
+Loss Location: 6720 Bellemeade Avenue, Evansville, Indiana 47714
+
+Risk:
+The risk is a split-level residence constructed in 1978. The dwelling has brick veneer on the lower level and vinyl siding on the upper level, with an asphalt architectural shingle roof. The home includes four bedrooms, two full bathrooms, a two-car attached garage at the lower level, and a partially finished lower level with a recreation room. The property is in good condition with a roof replacement completed in 2020 and an updated kitchen. The home appears to be adequately insured based on current construction costs.
+
+Interest and Title:
+German American Bank is listed as first mortgage holder. The insured confirmed the outstanding balance is approximately $168,000.
+
+Cause of Loss:
+On 04/08/2026 at approximately 3:15 PM, an EF-2 tornado with estimated peak winds of 125 mph moved through a section of southwest Evansville, including the neighborhood where the insured's property is located. The tornado was on the ground for approximately 1.2 miles and was approximately 200 yards wide at its widest point.
+
+The tornado struck the insured's property, removing the majority of the roof covering and sheathing from the upper level of the split-level home. The force of the wind also tore away a significant section of the vinyl siding on the upper level's north and west walls, exposing the sheathing and housewrap beneath. Multiple windows on the upper level were blown inward by wind pressure, and the attached garage door was buckled inward and destroyed.
+
+The insured and family had taken shelter in the lower level of the home and were not injured. Following the tornado, heavy rain fell through the exposed roof structure for approximately two hours before emergency tarping could be arranged.
+
+The National Weather Service confirmed the EF-2 rating based on their damage survey of the area, which included damage to multiple properties along the tornado's path.
+
+--------------------------------------------------------------------------------
+DAMAGES
+--------------------------------------------------------------------------------
+
+Structure:
+The upper-level roof sustained catastrophic damage with approximately 80% of the shingles, underlayment, and roof sheathing removed by the tornado. Exposed roof trusses show no signs of structural failure but several fascia boards and soffit sections were torn away. The roof will require complete replacement including new sheathing, underlayment, shingles, fascia, soffit, and gutters across the entire upper-level roofline.
+
+The upper-level exterior sustained loss of vinyl siding on the north and west elevations, totaling approximately 900 square feet. The housewrap beneath is torn in multiple locations, and isolated sheathing damage is present. Four windows on the upper level were destroyed by wind pressure, including two large picture windows in the living room. The attached garage door is a total loss.
+
+Interior damage from wind-driven rain and subsequent rainfall through the exposed roof is extensive across all four upper-level rooms. Ceilings, walls, and flooring in the master bedroom, two secondary bedrooms, and hallway show heavy water saturation. The living room sustained water damage and debris contamination from the blown-in windows. The lower level sustained moderate water intrusion where rain migrated through the floor system above. We are in the process of developing a comprehensive repair estimate.
+
+Contents:
+Upper-level contents in all bedrooms sustained heavy water damage from roof exposure and wind-driven rain. Living room furnishings near the destroyed windows sustained direct rain and debris damage. The insured is compiling a contents inventory. Based on preliminary assessment, contents losses appear significant given the extent of water exposure across the upper level.
+
+Additional Living Expenses / Loss of Use:
+The upper level is not habitable due to roof exposure and water damage. The lower level remains marginally habitable but is not suitable for the family of five on a sustained basis. The insured family is currently staying in a hotel, and we are assisting in securing a short-term rental while repairs are completed. The estimated repair timeline is three to four months.
+
+Subrogation & Salvage:
+Subrogation potential is not anticipated as the loss is attributed to a natural tornado event. No salvage value is anticipated.
+
+What Has Changed:
+This is our initial report.
+
+--------------------------------------------------------------------------------
+CLAIM FINANCIAL DETAIL
+--------------------------------------------------------------------------------
+
+Coverage    | Paid to Date  | New Reserve   | Net Change    | New Incurred
+------------|---------------|---------------|---------------|---------------
+Cov A       | $0.00         | $265,000.00   | $265,000.00   | $265,000.00
+Cov B       | $0.00         | $0.00         | $0.00         | $0.00
+Cov C       | $0.00         | $85,000.00    | $85,000.00    | $85,000.00
+Cov D       | $0.00         | $22,000.00    | $22,000.00    | $22,000.00
+------------|---------------|---------------|---------------|---------------
+TOTAL       | $0.00         | $372,000.00   | $372,000.00   | $372,000.00
+
+--------------------------------------------------------------------------------
+REINSURANCE FINANCIAL REPORTING
+--------------------------------------------------------------------------------
+
+Reinsurance Coordinator: Patricia Langford
+Phone: (317) 555-4820
+Email: plangford@indianafarmers.com
+
+CLAIM DETAIL — PART OF ULTIMATE NET LOSS (UNL)
+
+  INCURRED:
+    Co's Total Inc. UNL:              $372,000.00
+    Treaty Retention:                 $250,000.00
+    Excess Incurred UNL Rec.:         $122,000.00
+    Less Paid UNL Recovery:           $0.00
+    Outstanding UNL Recoverable:      $122,000.00
+
+  PAID:
+    Co's Total Paid UNL:              $0.00
+    Treaty Retention:                 $0.00
+    Excess Paid UNL Recovery:         $0.00
+    Less Prior Reinsurance Billings:  $0.00
+    Reinsurance Now Due:              $0.00
+
+--------------------------------------------------------------------------------
+PLAN OF ACTION & SIGN-OFF
+--------------------------------------------------------------------------------
+
+Date: April 13, 2026
+Name of Adjuster: Derek Holliday
+
+Plan of Action:
+- Finalize emergency stabilization and confirm tarping is holding.
+- Complete comprehensive structural damage assessment and obtain repair estimates.
+- Coordinate with insured on contents inventory compilation.
+- Assist insured in securing temporary housing for the family.
+- Monitor moisture levels and authorize drying protocol for water-damaged areas.
+- Continue coordination with reinsurance given incurred exceeds treaty retention.
+- Monitor for potential catastrophe designation by company or industry.
+- Continued reporting.
+
+================================================================================
+END OF LARGE LOSS REPORT
+================================================================================

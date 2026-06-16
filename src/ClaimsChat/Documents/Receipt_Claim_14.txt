@@ -1,0 +1,33 @@
+================================
+   MORTY'S CORNER DELI
+   118 E. Washington St.
+   Indianapolis, IN 46204
+   (317) 555-0193
+================================
+
+Date: 04/22/2026
+Time: 12:17 PM
+Order #: 3847
+Cashier: Denise
+
+--------------------------------
+
+1x  Italian Sub (12")         $11.49
+    - extra peppers
+    - oil & vinegar
+1x  Bag of Chips (BBQ)        $2.29
+1x  Large Fountain Drink       $2.99
+
+--------------------------------
+Subtotal:                     $16.77
+Tax (7%):                      $1.17
+--------------------------------
+TOTAL:                        $17.94
+
+Payment: Visa ending 4021
+Auth #: 882174
+
+Claim Number: 14
+
+Thank you for eating at Morty's!
+================================

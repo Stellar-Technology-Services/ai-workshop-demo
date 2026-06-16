@@ -1,0 +1,129 @@
+================================================================================
+LARGE LOSS REPORT (LLR) — PROPERTY
+================================================================================
+
+Report Type: First Report
+Reinsurance Notified: No
+
+--------------------------------------------------------------------------------
+CLAIM OVERVIEW
+--------------------------------------------------------------------------------
+
+Name of Adjuster: Rachel Simmons
+Claim Number: 1287203
+Name of Insured: Anthony & Lisa Brennan
+Policy Number: HOM2230640
+Policy Period: 02/28/2026 - 02/28/2027
+Agent Notified: Yes
+Name of Agency: Heartland Insurance Advisors
+Agency Location: South Bend, IN
+
+--------------------------------------------------------------------------------
+COVERAGE ISSUES
+--------------------------------------------------------------------------------
+
+The policy was in force on the date of loss. There appear to be no coverage concerns as water damage from a sudden and accidental discharge is a covered peril. Applicable Forms: HO 0003, HO 0490, HOM 1015, HOM 1019. Coverages: Coverage A: $310,000 RCV, Coverage B: $31,000, Coverage C: $217,000 RCV, Coverage D: ALS - 12 months from DOL. Deductible: $1,000.00.
+
+--------------------------------------------------------------------------------
+LOSS INFORMATION
+--------------------------------------------------------------------------------
+
+Date of Loss: 04/10/2026
+Date Reported: 04/10/2026
+Loss Location: 53218 Ironwood Road, South Bend, Indiana 46635
+
+Risk:
+The risk is a two-story traditional-style residence constructed in 1997. The dwelling has vinyl siding over wood-frame construction with an asphalt architectural shingle roof. The home includes four bedrooms, two and a half bathrooms, a two-car attached garage, and a full finished basement with a wet bar, recreation room, and fourth bedroom. The property is in good condition and the finished basement represents a significant portion of the home's overall value. The home appears to be insured to value.
+
+Interest and Title:
+1st Source Bank is listed as first mortgage holder. The insured confirmed the outstanding balance is approximately $204,000.
+
+Cause of Loss:
+On 04/10/2026 during a period of prolonged heavy rainfall, the insured's basement sump pump failed to activate, resulting in the accumulation of groundwater in the sump basin and eventual overflow into the finished basement. The insured discovered approximately four inches of standing water throughout the entire finished basement when checking on the home during the rainstorm.
+
+The insured immediately contacted a plumber, who determined the sump pump motor had burned out and failed to engage. The pump was approximately nine years old. The backup battery system, which had been installed at the same time, was found to have a dead battery that had not been replaced. The plumber installed an emergency replacement pump and pumping of the standing water began.
+
+The water had been present in the basement for an estimated six to eight hours before discovery. The insured noted that the basement had never flooded before in their 14 years of ownership, and the sump pump had always functioned without issue.
+
+We note that the policy includes the HOM 1019 sump pump overflow endorsement, which provides coverage for this type of loss. The endorsement limit is $25,000 for Coverage A and the full Coverage C limit applies to contents.
+
+--------------------------------------------------------------------------------
+DAMAGES
+--------------------------------------------------------------------------------
+
+Structure:
+The entire finished basement sustained water damage from four inches of standing groundwater. The finished basement includes approximately 1,200 square feet of living space with carpet over pad, painted drywall on all walls, a suspended ceiling system, recessed lighting, and built-in cabinetry for the wet bar and entertainment area.
+
+All carpet and pad throughout the basement is a total loss due to contamination and saturation. Drywall along all perimeter walls has wicked moisture to a height of approximately 18 inches and will require removal and replacement to a four-foot cut line per standard remediation protocol. The suspended ceiling tiles show staining and warping in the lowest-lying areas near the sump basin. Built-in cabinetry for the wet bar sustained water damage at the base, with swelling and delamination of the particle board substrate. Interior doors throughout the basement show swelling at the bottom edges.
+
+A water mitigation company has completed extraction, placed drying equipment, and is monitoring moisture levels. Once drying is complete, we will authorize demolition and obtain repair estimates. Preliminary assessment suggests structural repair costs will be in the $85,000 to $100,000 range given the full-basement scope and quality of finishes involved.
+
+Contents:
+Basement contents sustained water damage including a leather sectional sofa, area rugs, a pool table with felt top, gaming equipment, a mini-refrigerator, and stored items in closets including seasonal clothing and holiday decorations. The insured is compiling a contents inventory. Based on preliminary assessment, contents losses are estimated at $30,000 to $40,000.
+
+Additional Living Expenses / Loss of Use:
+The main level and upper level of the home remain habitable. The finished basement, which was used as primary living and entertainment space, is not usable. No ALE expenses are anticipated as the insured family can continue residing in the home.
+
+Subrogation & Salvage:
+Subrogation potential is under evaluation. The sump pump and dead backup battery have been preserved. We are investigating the pump manufacturer and whether a product defect contributed to the motor failure. The battery backup system will also be examined. No salvage value is anticipated.
+
+What Has Changed:
+This is our initial report.
+
+--------------------------------------------------------------------------------
+CLAIM FINANCIAL DETAIL
+--------------------------------------------------------------------------------
+
+Coverage    | Paid to Date  | New Reserve   | Net Change    | New Incurred
+------------|---------------|---------------|---------------|---------------
+Cov A       | $0.00         | $95,000.00    | $95,000.00    | $95,000.00
+Cov B       | $0.00         | $0.00         | $0.00         | $0.00
+Cov C       | $0.00         | $35,000.00    | $35,000.00    | $35,000.00
+Cov D       | $0.00         | $0.00         | $0.00         | $0.00
+------------|---------------|---------------|---------------|---------------
+TOTAL       | $0.00         | $130,000.00   | $130,000.00   | $130,000.00
+
+--------------------------------------------------------------------------------
+REINSURANCE FINANCIAL REPORTING
+--------------------------------------------------------------------------------
+
+Reinsurance Coordinator: Patricia Langford
+Phone: (317) 555-4820
+Email: plangford@indianafarmers.com
+
+CLAIM DETAIL — PART OF ULTIMATE NET LOSS (UNL)
+
+  INCURRED:
+    Co's Total Inc. UNL:              $130,000.00
+    Treaty Retention:                 $250,000.00
+    Excess Incurred UNL Rec.:         $0.00
+    Less Paid UNL Recovery:           $0.00
+    Outstanding UNL Recoverable:      $0.00
+
+  PAID:
+    Co's Total Paid UNL:              $0.00
+    Treaty Retention:                 $250,000.00
+    Excess Paid UNL Recovery:         $0.00
+    Less Prior Reinsurance Billings:  $0.00
+    Reinsurance Now Due:              $0.00
+
+--------------------------------------------------------------------------------
+PLAN OF ACTION & SIGN-OFF
+--------------------------------------------------------------------------------
+
+Date: April 15, 2026
+Name of Adjuster: Rachel Simmons
+
+Plan of Action:
+- Complete water mitigation and drying protocol; monitor moisture levels to confirm dry-out.
+- Authorize demolition of damaged materials once drying is confirmed.
+- Obtain comprehensive structural repair estimates.
+- Coordinate with insured on basement contents inventory.
+- Preserve sump pump and battery backup system for subrogation evaluation.
+- Confirm applicability and limits under the HOM 1019 sump pump overflow endorsement.
+- Monitor reserves as full repair scope is determined.
+- Continued reporting.
+
+================================================================================
+END OF LARGE LOSS REPORT
+================================================================================

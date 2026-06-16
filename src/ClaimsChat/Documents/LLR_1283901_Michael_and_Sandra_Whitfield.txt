@@ -1,0 +1,126 @@
+================================================================================
+LARGE LOSS REPORT (LLR) — PROPERTY
+================================================================================
+
+Report Type: First Report
+Reinsurance Notified: Yes
+
+--------------------------------------------------------------------------------
+CLAIM OVERVIEW
+--------------------------------------------------------------------------------
+
+Name of Adjuster: Aaron Talbot
+Claim Number: 1283901
+Name of Insured: Michael & Sandra Whitfield
+Policy Number: HOM2198400
+Policy Period: 03/15/2025 - 03/15/2026
+Agent Notified: Yes
+Name of Agency: Crossroads Insurance Group
+Agency Location: Carmel, IN
+
+--------------------------------------------------------------------------------
+COVERAGE ISSUES
+--------------------------------------------------------------------------------
+
+The policy was in force on the date of loss. There appear to be no coverage concerns as fire is a covered peril. Applicable Forms: HO 0003, HO 0490, HO 0420, HOM 1015, HOM 1019. Coverages: Coverage A: $362,000 RCV with additional 20% AAOI endorsement, Coverage B: $36,200, Coverage C: $253,400 RCV, Coverage D: ALS - 12 months from DOL. Deductible: $1,000.00.
+
+--------------------------------------------------------------------------------
+LOSS INFORMATION
+--------------------------------------------------------------------------------
+
+Date of Loss: 03/22/2026
+Date Reported: 03/22/2026
+Loss Location: 4817 Meadowbrook Lane, Carmel, Indiana 46033
+
+Risk:
+The risk is a two-story colonial-style residence constructed in 2004. The dwelling has vinyl siding over wood-frame construction with an architectural asphalt shingle roof. The home includes four bedrooms, three bathrooms, a two-car attached garage, main level living areas, and a full unfinished basement. The property is in good condition and appears to be insured to value based on local residential construction costs.
+
+Interest and Title:
+First Federal Savings Bank is listed as first mortgage holder. The insured confirmed this information is accurate with approximately $245,000 remaining on the balance.
+
+Cause of Loss:
+On 03/22/2026 at approximately 2:15 AM, the insured was awakened by the sound of smoke detectors activating throughout the home. Upon investigation, the insured discovered heavy smoke filling the main floor hallway and flames visible in the kitchen area near the stove. The insured gathered family members and evacuated the home before calling 911. The Carmel Fire Department responded within seven minutes and found active fire involvement in the kitchen extending into the ceiling cavity above and into the adjoining family room wall.
+
+Firefighters performed an aggressive interior attack, ventilated the roof above the kitchen area, and contained the fire within approximately 45 minutes. The fire was fully extinguished after approximately two hours of overhaul operations.
+
+The Origin and Cause investigation completed by Kevin Marsh with Tri-State Fire Investigations indicates the fire originated at the kitchen range area. The cause has been determined to be accidental, attributed to a grease-soaked towel that was inadvertently left on the stovetop burner, which was found to be in the low-heat position. No evidence of intentional or suspicious activity was identified.
+
+--------------------------------------------------------------------------------
+DAMAGES
+--------------------------------------------------------------------------------
+
+Structure:
+The fire caused extensive damage to the kitchen, with complete destruction of cabinetry, countertops, appliances, flooring, and ceiling finishes. The fire extended through the ceiling cavity above the kitchen, damaging roof trusses, decking, and sheathing in an approximately 12-by-16-foot area. The adjoining family room sustained significant smoke and heat damage to walls, ceiling, and built-in shelving, with partial wall destruction where fire breached the common wall.
+
+Water damage from suppression efforts is present throughout the main level, with the most severe impact in the kitchen, family room, foyer, and dining room. Hardwood flooring throughout the main level has sustained warping and saturation. The basement below the kitchen area also received water intrusion from above, damaging stored items and drywall in the partially finished recreation area.
+
+The dwelling is repairable. The kitchen and family room will require complete gut renovation. Roof repairs will include truss sistering, new decking, and replacement of shingles in the affected area. We are in the process of obtaining a comprehensive repair estimate from the insured's preferred contractor and will compare against our independent assessment.
+
+Contents:
+Personal property in the kitchen was largely destroyed by direct flame contact. Family room contents including furniture, electronics, and decorative items sustained heavy smoke and heat damage. Contents throughout the remainder of the main level have moderate smoke and soot exposure. The insured is working with our contents specialist to compile an inventory of damaged items, and the restoration contractor is assessing which items may be restorable through cleaning and deodorization versus those requiring replacement.
+
+Additional Living Expenses / Loss of Use:
+The residence has been rendered uninhabitable due to fire, smoke, and water damage. The insured family of four is currently staying with relatives in the area. We are coordinating with the insured to secure a furnished rental property for the duration of repairs, estimated at four to six months.
+
+Subrogation & Salvage:
+Subrogation potential is not anticipated as the loss is attributed to an accidental act by the insured. No salvage value is anticipated.
+
+What Has Changed:
+This is our initial report.
+
+--------------------------------------------------------------------------------
+CLAIM FINANCIAL DETAIL
+--------------------------------------------------------------------------------
+
+Coverage    | Paid to Date  | New Reserve   | Net Change    | New Incurred
+------------|---------------|---------------|---------------|---------------
+Cov A       | $0.00         | $185,000.00   | $185,000.00   | $185,000.00
+Cov B       | $0.00         | $0.00         | $0.00         | $0.00
+Cov C       | $0.00         | $75,000.00    | $75,000.00    | $75,000.00
+Cov D       | $0.00         | $18,000.00    | $18,000.00    | $18,000.00
+------------|---------------|---------------|---------------|---------------
+TOTAL       | $0.00         | $278,000.00   | $278,000.00   | $278,000.00
+
+--------------------------------------------------------------------------------
+REINSURANCE FINANCIAL REPORTING
+--------------------------------------------------------------------------------
+
+Reinsurance Coordinator: Patricia Langford
+Phone: (317) 555-4820
+Email: plangford@indianafarmers.com
+
+CLAIM DETAIL — PART OF ULTIMATE NET LOSS (UNL)
+
+  INCURRED:
+    Co's Total Inc. UNL:              $278,000.00
+    Treaty Retention:                 $250,000.00
+    Excess Incurred UNL Rec.:         $28,000.00
+    Less Paid UNL Recovery:           $0.00
+    Outstanding UNL Recoverable:      $28,000.00
+
+  PAID:
+    Co's Total Paid UNL:              $0.00
+    Treaty Retention:                 $0.00
+    Excess Paid UNL Recovery:         $0.00
+    Less Prior Reinsurance Billings:  $0.00
+    Reinsurance Now Due:              $0.00
+
+--------------------------------------------------------------------------------
+PLAN OF ACTION & SIGN-OFF
+--------------------------------------------------------------------------------
+
+Date: March 27, 2026
+Name of Adjuster: Aaron Talbot
+
+Plan of Action:
+- Finalize the origin and cause investigation and obtain final report.
+- Complete the structural damage assessment and obtain contractor estimates.
+- Coordinate contents inventory with the insured and contents specialist.
+- Secure temporary housing for the insured family.
+- Monitor reserves to ensure they remain appropriate as estimates develop.
+- Evaluate subrogation potential upon completion of investigation.
+- Continued reporting.
+
+================================================================================
+END OF LARGE LOSS REPORT
+================================================================================

@@ -1,0 +1,122 @@
+================================================================================
+LARGE LOSS REPORT (LLR) — PROPERTY
+================================================================================
+
+Report Type: Closing Report
+Reinsurance Notified: No
+
+--------------------------------------------------------------------------------
+CLAIM OVERVIEW
+--------------------------------------------------------------------------------
+
+Name of Adjuster: Thomas Beckett
+Claim Number: 1262780
+Name of Insured: Earl & Donna Swanson
+Policy Number: HOM1945610
+Policy Period: 06/18/2025 - 06/18/2026
+Agent Notified: Yes
+Name of Agency: River City Insurance Group DBA: Bartholomew & Associates
+Agency Location: Columbus, IN
+
+--------------------------------------------------------------------------------
+COVERAGE ISSUES
+--------------------------------------------------------------------------------
+
+The policy was in force on the date of loss. There appear to be no coverage concerns. Applicable Forms: HO 0003, HO 0490, HOM 1015. Coverages: Coverage A: $198,000 RCV, Coverage B: $19,800, Coverage C: $138,600 RCV, Coverage D: ALS - 12 months from DOL. Deductible: $1,000.00.
+
+--------------------------------------------------------------------------------
+LOSS INFORMATION
+--------------------------------------------------------------------------------
+
+Date of Loss: 08/15/2025
+Date Reported: 08/15/2025
+Loss Location: 1480 Haw Creek Boulevard, Columbus, Indiana 47201
+
+Risk:
+The risk is a single-story ranch residence constructed in 1972. The dwelling has aluminum siding over wood-frame construction with a low-slope asphalt shingle roof. The home includes three bedrooms, one and a half bathrooms, an attached one-car garage, and a crawlspace foundation. The property is in average condition for its age. The roof was last replaced in 2015. The home was purchased by the insured in 2018.
+
+Interest and Title:
+Centurion Federal Credit Union is listed as first mortgage holder. The insured confirmed the outstanding balance was approximately $94,000 at the time of loss.
+
+Cause of Loss:
+On 08/15/2025 at approximately 2:00 AM, the insured was awakened by the sound of glass breaking and loud noises coming from the front of the home. The insured armed himself and investigated from the hallway, observing an individual fleeing through the broken front window of the living room. The insured called 911 and the Columbus Police Department responded within minutes.
+
+Upon investigation, it was determined that one or more individuals had thrown a large landscaping boulder through the front picture window, entered the home, and proceeded to cause extensive damage to the interior. Walls in the living room, dining room, and kitchen were spray-painted with graffiti. Multiple interior doors were kicked in or damaged. The kitchen sustained damage to countertops, cabinet doors, and the refrigerator. The living room television and entertainment center were destroyed. A small fire was set using paper and lighter fluid in the dining room corner, which scorched the wall, ceiling, and flooring in a localized area before self-extinguishing.
+
+The Columbus Police Department investigated the incident as a criminal vandalism case. Two juvenile suspects were subsequently identified and charged. The insured indicated no prior relationship with or knowledge of the suspects.
+
+--------------------------------------------------------------------------------
+DAMAGES
+--------------------------------------------------------------------------------
+
+Structure:
+The front picture window was destroyed and required full replacement, including the frame and surrounding trim. Interior walls in the living room, dining room, and kitchen required extensive drywall repair, skim-coating, and repainting to remove graffiti and repair impact damage. Three interior doors and frames were replaced. The dining room corner sustained localized fire damage requiring replacement of drywall, ceiling texture, and vinyl plank flooring in an approximately 4-by-4-foot area. The kitchen countertop required replacement of a six-foot laminate section, and four cabinet door fronts were replaced. The refrigerator door panel was dented but the unit remained functional; the insured elected to accept a cash settlement for the cosmetic damage.
+
+All structural repairs were completed in November 2025. Final cost of structural repair was $78,450, which included window replacement, full interior restoration, fire damage repair, kitchen repairs, and door replacements.
+
+Contents:
+Damaged contents included a 65-inch television, entertainment center, living room end tables, decorative items, and dining room curtains. The total agreed contents loss was $8,920 at replacement cost. All contents were replaced and the depreciation holdback of $1,650 was released upon proof of replacement. Contents are fully settled.
+
+Additional Living Expenses / Loss of Use:
+The insured remained in the home during repairs, as damage was primarily cosmetic and the home remained habitable. The insured voluntarily stayed with family for approximately one week while the broken window was replaced and the home was secured. ALE expenses of $850 were incurred and paid for that period.
+
+Subrogation & Salvage:
+Subrogation was pursued against the parents/guardians of the two juvenile suspects through their homeowners carriers. A total recovery of $87,370 was obtained through a combination of settlements from both carriers, representing approximately 98% of our net outlay after the insured's deductible. The insured's $1,000 deductible was included in the subrogation demand and refunded upon receipt of recovery. No salvage value was applicable.
+
+What Has Changed:
+Since the prior report, all repairs have been completed and final payments issued. All contents have been settled including depreciation holdback. Subrogation recovery of $87,370 was received from the responsible parties' carriers. The insured's deductible has been refunded. ALE has been finalized. This file is being closed.
+
+--------------------------------------------------------------------------------
+CLAIM FINANCIAL DETAIL
+--------------------------------------------------------------------------------
+
+Coverage    | Paid to Date  | New Reserve   | Net Change    | New Incurred
+------------|---------------|---------------|---------------|---------------
+Cov A       | $78,450.00    | $0.00         | ($11,550.00)  | $78,450.00
+Cov B       | $0.00         | $0.00         | $0.00         | $0.00
+Cov C       | $8,920.00     | $0.00         | ($1,080.00)   | $8,920.00
+Cov D       | $850.00       | $0.00         | ($150.00)     | $850.00
+------------|---------------|---------------|---------------|---------------
+TOTAL       | $88,220.00    | $0.00         | ($12,780.00)  | $88,220.00
+
+--------------------------------------------------------------------------------
+REINSURANCE FINANCIAL REPORTING
+--------------------------------------------------------------------------------
+
+Reinsurance Coordinator: Patricia Langford
+Phone: (317) 555-4820
+Email: plangford@indianafarmers.com
+
+CLAIM DETAIL — PART OF ULTIMATE NET LOSS (UNL)
+
+  INCURRED:
+    Co's Total Inc. UNL:              $88,220.00
+    Treaty Retention:                 $250,000.00
+    Excess Incurred UNL Rec.:         $0.00
+    Less Paid UNL Recovery:           $0.00
+    Outstanding UNL Recoverable:      $0.00
+
+  PAID:
+    Co's Total Paid UNL:              $88,220.00
+    Treaty Retention:                 $250,000.00
+    Excess Paid UNL Recovery:         $0.00
+    Less Prior Reinsurance Billings:  $0.00
+    Reinsurance Now Due:              $0.00
+
+--------------------------------------------------------------------------------
+PLAN OF ACTION & SIGN-OFF
+--------------------------------------------------------------------------------
+
+Date: February 28, 2026
+Name of Adjuster: Thomas Beckett
+
+Plan of Action:
+- All repairs completed and final payment issued.
+- All contents settled and depreciation holdback released.
+- Subrogation recovery received; insured deductible refunded.
+- ALE finalized at $850.
+- Close claim file.
+
+================================================================================
+END OF LARGE LOSS REPORT
+================================================================================

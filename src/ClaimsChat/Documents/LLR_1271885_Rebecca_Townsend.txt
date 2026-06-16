@@ -1,0 +1,126 @@
+================================================================================
+LARGE LOSS REPORT (LLR) — PROPERTY
+================================================================================
+
+Report Type: Updated Report
+Reinsurance Notified: Yes
+
+--------------------------------------------------------------------------------
+CLAIM OVERVIEW
+--------------------------------------------------------------------------------
+
+Name of Adjuster: Aaron Talbot
+Claim Number: 1271885
+Name of Insured: Rebecca Townsend
+Policy Number: HOM2032910
+Policy Period: 09/22/2025 - 09/22/2026
+Agent Notified: Yes
+Name of Agency: Hoosier State Insurance Group
+Agency Location: Terre Haute, IN
+
+--------------------------------------------------------------------------------
+COVERAGE ISSUES
+--------------------------------------------------------------------------------
+
+The policy was in force on the date of loss. There appear to be no coverage concerns as falling objects (tree) is a covered peril. Applicable Forms: HO 0003, HO 0490, HOM 1015. Coverages: Coverage A: $178,000 RCV, Coverage B: $17,800, Coverage C: $124,600 RCV, Coverage D: ALS - 12 months from DOL. Deductible: $1,000.00.
+
+--------------------------------------------------------------------------------
+LOSS INFORMATION
+--------------------------------------------------------------------------------
+
+Date of Loss: 11/28/2025
+Date Reported: 11/28/2025
+Loss Location: 520 South Center Street, Terre Haute, Indiana 47803
+
+Risk:
+The risk is a one-and-a-half-story bungalow-style residence constructed in 1928. The dwelling has painted wood siding with a steeply pitched asphalt shingle roof and an enclosed front porch. The home includes two bedrooms on the main level, one finished bedroom in the upper half-story, one full bathroom, a detached two-car garage, and a full unfinished basement. The home is in fair to good condition, consistent with its age, and has undergone periodic updates including a roof replacement in 2018.
+
+Interest and Title:
+Terre Haute Savings Bank is listed as first mortgage holder. The insured confirmed the outstanding balance is approximately $68,000.
+
+Cause of Loss:
+On 11/28/2025, a large white oak tree estimated at 80 feet in height and located on the neighboring property to the east fell onto the insured's dwelling during a period of sustained high winds and heavy rain. The tree trunk struck the roof at the ridge, causing a catastrophic collapse of the upper half-story and significant structural damage to the main level below.
+
+The insured was not home at the time of the incident. A neighbor contacted the insured and emergency services. Upon arrival, firefighters assessed the structure and determined it was unsafe to enter. Emergency tree removal was performed the following day, and a structural engineer was retained to assess the damage.
+
+The tree had been previously identified by the neighboring property owner as healthy, and no prior complaints or concerns had been documented. An arborist inspection performed after the loss identified internal decay at the root crown that was not visible from external examination.
+
+--------------------------------------------------------------------------------
+DAMAGES
+--------------------------------------------------------------------------------
+
+Structure:
+The upper half-story of the home sustained a near-total collapse. The roof structure, including rafters, ridge board, decking, and shingles, is a complete loss across approximately 70% of the roof area. The upper bedroom walls, ceiling, and floor system were destroyed. Structural framing members on the main level below the impact zone sustained damage including cracked ceiling joists and a displaced bearing wall.
+
+The main-level front bedroom and living room sustained significant damage from the tree impact and subsequent water intrusion through the open roof. Ceilings collapsed in both rooms, and wall framing was compromised along the north bearing wall. The kitchen, rear bedroom, and bathroom sustained moderate to heavy water damage from prolonged exposure prior to tarping. The basement received substantial water intrusion.
+
+An engineering assessment has confirmed the dwelling is repairable, though repairs are extensive and include full roof reconstruction, upper-story rebuild, bearing wall repair, and comprehensive main-level restoration. The agreed cost of repair is $196,500.
+
+Contents:
+The upper bedroom contents were destroyed by the tree impact, including bedroom furniture, clothing, and personal items. Main-level contents in the front bedroom and living room sustained heavy damage from structural collapse and water exposure. Contents throughout the remainder of the home have varying degrees of water damage. A contents inventory was submitted by the insured totaling $34,200. We have reviewed and agreed to $31,750 at replacement cost, with depreciation holdback of $7,600.
+
+Additional Living Expenses / Loss of Use:
+The residence is uninhabitable and the insured has been living in a rented apartment since December 2025. Monthly rental costs are $1,200 and the insured's normal housing costs (mortgage payment) are $625. The ALE differential is $575 per month. Total ALE incurred to date is $4,600 with an estimated additional $2,300 remaining.
+
+Subrogation & Salvage:
+Subrogation is being pursued against the neighboring property owner's homeowners insurance carrier. The arborist report documenting internal root crown decay supports a potential negligence argument, as the tree's condition may have been discoverable through reasonable inspection. Subrogation counsel has been engaged and a demand letter has been sent. No salvage value is anticipated.
+
+What Has Changed:
+Since the initial report, the engineering assessment has been completed confirming repairability. Structural repair scope has been agreed at $196,500, with repairs now underway. Contents inventory has been reviewed and agreed at $31,750 RCV. Subrogation counsel has been engaged and a demand letter sent to the neighbor's carrier. Reserves have been adjusted to reflect agreed costs and anticipated ALE through completion of repairs.
+
+--------------------------------------------------------------------------------
+CLAIM FINANCIAL DETAIL
+--------------------------------------------------------------------------------
+
+Coverage    | Paid to Date  | New Reserve   | Net Change    | New Incurred
+------------|---------------|---------------|---------------|---------------
+Cov A       | $78,600.00    | $117,900.00   | $16,500.00    | $196,500.00
+Cov B       | $0.00         | $0.00         | $0.00         | $0.00
+Cov C       | $12,075.00    | $19,675.00    | $1,750.00     | $31,750.00
+Cov D       | $4,600.00     | $2,300.00     | ($1,100.00)   | $6,900.00
+------------|---------------|---------------|---------------|---------------
+TOTAL       | $95,275.00    | $139,875.00   | $17,150.00    | $235,150.00
+
+--------------------------------------------------------------------------------
+REINSURANCE FINANCIAL REPORTING
+--------------------------------------------------------------------------------
+
+Reinsurance Coordinator: Patricia Langford
+Phone: (317) 555-4820
+Email: plangford@indianafarmers.com
+
+CLAIM DETAIL — PART OF ULTIMATE NET LOSS (UNL)
+
+  INCURRED:
+    Co's Total Inc. UNL:              $235,150.00
+    Treaty Retention:                 $250,000.00
+    Excess Incurred UNL Rec.:         $0.00
+    Less Paid UNL Recovery:           $0.00
+    Outstanding UNL Recoverable:      $0.00
+
+  PAID:
+    Co's Total Paid UNL:              $95,275.00
+    Treaty Retention:                 $250,000.00
+    Excess Paid UNL Recovery:         $0.00
+    Less Prior Reinsurance Billings:  $0.00
+    Reinsurance Now Due:              $0.00
+
+--------------------------------------------------------------------------------
+PLAN OF ACTION & SIGN-OFF
+--------------------------------------------------------------------------------
+
+Date: March 15, 2026
+Name of Adjuster: Aaron Talbot
+
+Plan of Action:
+- Monitor structural repair progress and process contractor draw payments.
+- Process depreciation holdback on contents upon proof of replacement.
+- Continue monitoring ALE expenses through completion of repairs.
+- Follow up with subrogation counsel on demand letter response.
+- Obtain completion certificate and final inspection upon finish of repairs.
+- Process final payment and prepare claim for closure.
+- Continued reporting.
+
+================================================================================
+END OF LARGE LOSS REPORT
+================================================================================

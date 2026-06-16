@@ -1,0 +1,126 @@
+================================================================================
+LARGE LOSS REPORT (LLR) — PROPERTY
+================================================================================
+
+Report Type: Updated Report
+Reinsurance Notified: Yes
+
+--------------------------------------------------------------------------------
+CLAIM OVERVIEW
+--------------------------------------------------------------------------------
+
+Name of Adjuster: Thomas Beckett
+Claim Number: 1279632
+Name of Insured: Jonathan & Karen Llewellyn
+Policy Number: HOM2108475
+Policy Period: 01/15/2025 - 01/15/2026
+Agent Notified: Yes
+Name of Agency: Covered Bridge Insurance Partners
+Agency Location: Greencastle, IN
+
+--------------------------------------------------------------------------------
+COVERAGE ISSUES
+--------------------------------------------------------------------------------
+
+The policy was in force on the date of loss. There appear to be no coverage concerns as fire is a covered peril. Applicable Forms: HO 0003, HO 0490, HO 0420, HOM 1015, HOM 1019. Coverages: Coverage A: $485,000 RCV with additional 20% AAOI endorsement, Coverage B: $48,500, Coverage C: $339,500 RCV, Coverage D: ALS - 12 months from DOL. Deductible: $2,500.00.
+
+--------------------------------------------------------------------------------
+LOSS INFORMATION
+--------------------------------------------------------------------------------
+
+Date of Loss: 12/22/2025
+Date Reported: 12/22/2025
+Loss Location: 9402 Thornberry Court, Greencastle, Indiana 46135
+
+Risk:
+The risk is a two-story craftsman-style residence constructed in 2009. The dwelling has fiber cement lap siding with stone veneer accents and an architectural asphalt shingle roof with standing-seam metal accent roofing over the front porch and dormers. The home includes four bedrooms, three full bathrooms, a three-car attached garage, a finished walkout basement, and a large rear deck. The property sits on a three-acre rural lot and is in excellent condition, having been meticulously maintained by the insured. The home appears to be insured to value.
+
+Interest and Title:
+Old National Bank is listed as first mortgage holder. The insured confirmed the outstanding balance is approximately $298,000.
+
+Cause of Loss:
+On 12/22/2025 at approximately 5:30 PM, the insured was preparing dinner in the kitchen when a fire started in the living room fireplace area. The insured had started a fire in the wood-burning fireplace approximately 30 minutes earlier. Unbeknownst to the insured, a crack in the clay tile flue liner allowed heat and embers to contact combustible framing in the wall chase adjacent to the chimney.
+
+The insured first noticed smoke emerging from the crown molding near the fireplace wall in the living room. Within minutes, flames became visible at the ceiling line. The insured evacuated the home with family members and called 911. The Greencastle Fire Department and mutual aid companies from Cloverdale and Bainbridge responded. Upon arrival, firefighters encountered heavy fire involvement on the main level, with extension through the wall chase into the second-floor master bedroom above and into the attic space.
+
+Firefighting operations lasted approximately three hours. The fire was confined primarily to the east side of the home but smoke and water damage extended throughout the structure. A post-fire investigation by Linda Kirkpatrick with Central Indiana Fire Consultants determined the origin to be the fireplace wall chase and the cause to be heat transfer through a cracked flue liner. The flue liner crack was attributed to age-related thermal cycling and was not visible during normal use or standard chimney inspections.
+
+--------------------------------------------------------------------------------
+DAMAGES
+--------------------------------------------------------------------------------
+
+Structure:
+The east wall chase from the main-level fireplace through the second floor and into the attic sustained the heaviest fire damage, with charring and destruction of framing, insulation, drywall, and wiring within the chase. The main-level living room sustained significant fire damage including destruction of the ceiling, crown molding, built-in bookcases flanking the fireplace, hardwood flooring, and portions of the east wall. The fireplace surround and mantel are total losses and the firebox requires reconstruction.
+
+The second-floor master bedroom, located directly above the living room, sustained fire damage to the east wall, ceiling, and closet area. The master bathroom sustained smoke and water damage. The attic space above the east portion of the home had fire damage to trusses, decking, and insulation over approximately a 20-by-30-foot area. The remainder of the home sustained heavy smoke damage throughout both floors, with soot deposits on walls, ceilings, cabinetry, and fixtures. Water damage from suppression efforts is present on the main level, second floor, and basement.
+
+Repairs are now approximately 65% complete. Structural framing has been repaired, the chimney and flue have been reconstructed to current code, the new roof section has been installed, and mechanical rough-ins are complete. Drywall, flooring, and finish work are in progress. The agreed cost of structural repair is $425,000, reflecting the extensive scope of work required.
+
+Contents:
+Living room contents were largely destroyed by fire, including furniture, area rugs, artwork, electronics, and the insured's personal library. Second-floor master bedroom and bathroom contents sustained smoke, soot, and water damage. Contents throughout the remainder of the home required professional cleaning and deodorization. The insured submitted a comprehensive contents inventory totaling $142,000. After review and negotiation, we have agreed to $128,500 at replacement cost, with depreciation holdback of $24,200 pending proof of replacement. Contents restoration efforts are ongoing, with restorable items being processed by the restoration company.
+
+Additional Living Expenses / Loss of Use:
+The residence has been uninhabitable since the date of loss. The insured family of four has been residing in a furnished rental home in Greencastle. Monthly ALE differential is $1,850 after credit for normal housing costs. ALE incurred to date is $14,800. Repairs are expected to continue for approximately three additional months, with estimated total ALE of $20,350.
+
+Subrogation & Salvage:
+Subrogation potential has been evaluated and is not being pursued. The flue liner failure was determined to be age-related thermal cycling rather than a defect in materials or installation. The chimney had passed its most recent inspection in 2023, and the crack was internal and not detectable through standard visual inspection. No salvage value is anticipated.
+
+What Has Changed:
+Since the initial report, the origin and cause investigation has been finalized. An agreed cost of structural repair has been established at $425,000 and repairs are approximately 65% complete. The contents inventory has been reviewed and agreed at $128,500 RCV. The insured remains in temporary housing with ALE ongoing. Subrogation was evaluated and determined not to be viable. Reserves have been increased to reflect the full agreed scope.
+
+--------------------------------------------------------------------------------
+CLAIM FINANCIAL DETAIL
+--------------------------------------------------------------------------------
+
+Coverage    | Paid to Date  | New Reserve   | Net Change    | New Incurred
+------------|---------------|---------------|---------------|---------------
+Cov A       | $212,500.00   | $212,500.00   | $75,000.00    | $425,000.00
+Cov B       | $0.00         | $0.00         | $0.00         | $0.00
+Cov C       | $52,150.00    | $76,350.00    | $28,500.00    | $128,500.00
+Cov D       | $14,800.00    | $5,550.00     | $350.00       | $20,350.00
+------------|---------------|---------------|---------------|---------------
+TOTAL       | $279,450.00   | $294,400.00   | $103,850.00   | $573,850.00
+
+--------------------------------------------------------------------------------
+REINSURANCE FINANCIAL REPORTING
+--------------------------------------------------------------------------------
+
+Reinsurance Coordinator: Patricia Langford
+Phone: (317) 555-4820
+Email: plangford@indianafarmers.com
+
+CLAIM DETAIL — PART OF ULTIMATE NET LOSS (UNL)
+
+  INCURRED:
+    Co's Total Inc. UNL:              $573,850.00
+    Treaty Retention:                 $250,000.00
+    Excess Incurred UNL Rec.:         $323,850.00
+    Less Paid UNL Recovery:           $29,450.00
+    Outstanding UNL Recoverable:      $294,400.00
+
+  PAID:
+    Co's Total Paid UNL:              $279,450.00
+    Treaty Retention:                 $250,000.00
+    Excess Paid UNL Recovery:         $29,450.00
+    Less Prior Reinsurance Billings:  $0.00
+    Reinsurance Now Due:              $29,450.00
+
+--------------------------------------------------------------------------------
+PLAN OF ACTION & SIGN-OFF
+--------------------------------------------------------------------------------
+
+Date: March 25, 2026
+Name of Adjuster: Thomas Beckett
+
+Plan of Action:
+- Monitor structural repair progress through completion, estimated in approximately three months.
+- Process contractor draw payments as work milestones are reached.
+- Process depreciation holdback on contents upon proof of replacement.
+- Continue monitoring ALE expenses through completion of repairs.
+- Submit reinsurance billing for excess paid recovery.
+- Obtain completion certificate and conduct final walkthrough upon finish of repairs.
+- Continued reporting.
+
+================================================================================
+END OF LARGE LOSS REPORT
+================================================================================

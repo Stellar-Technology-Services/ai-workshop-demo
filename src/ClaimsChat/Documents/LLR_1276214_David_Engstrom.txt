@@ -1,0 +1,125 @@
+================================================================================
+LARGE LOSS REPORT (LLR) — PROPERTY
+================================================================================
+
+Report Type: Updated Report
+Reinsurance Notified: Yes
+
+--------------------------------------------------------------------------------
+CLAIM OVERVIEW
+--------------------------------------------------------------------------------
+
+Name of Adjuster: Rachel Simmons
+Claim Number: 1276214
+Name of Insured: David Engstrom
+Policy Number: HOM2054780
+Policy Period: 08/01/2025 - 08/01/2026
+Agent Notified: Yes
+Name of Agency: Heritage Mutual Agency DBA: Engleman & Associates
+Agency Location: Fort Wayne, IN
+
+--------------------------------------------------------------------------------
+COVERAGE ISSUES
+--------------------------------------------------------------------------------
+
+The policy was in force on the date of loss. There appear to be no coverage concerns as wind is a covered peril. Applicable Forms: HO 0003, HO 0490, HOM 1015. Coverages: Coverage A: $218,000 RCV, Coverage B: $21,800, Coverage C: $152,600 RCV, Coverage D: ALS - 12 months from DOL. Deductible: $2,500.00 wind/hail deductible applies.
+
+--------------------------------------------------------------------------------
+LOSS INFORMATION
+--------------------------------------------------------------------------------
+
+Date of Loss: 01/14/2026
+Date Reported: 01/14/2026
+Loss Location: 2903 Covington Road, Fort Wayne, Indiana 46804
+
+Risk:
+The risk is a single-story brick ranch residence constructed in 1967. The dwelling has full masonry exterior walls with an asphalt three-tab shingle roof. The home includes three bedrooms, one and a half bathrooms, an attached one-car garage, and a full finished basement with a recreation room and utility area. The property is in average condition and appears to be adequately insured based on current replacement cost estimates for the area.
+
+Interest and Title:
+Lake City Mortgage Corporation is listed as first mortgage holder. The insured confirmed the outstanding balance is approximately $87,000.
+
+Cause of Loss:
+On 01/14/2026 at approximately 6:30 PM, a severe winter storm with straight-line winds estimated at 70-80 mph moved through the Fort Wayne metropolitan area. A large silver maple tree, approximately 60 feet in height and located in the insured's front yard, was uprooted by the sustained winds and fell directly onto the northwest corner of the dwelling.
+
+The tree struck the roof at the ridge line and caused the roof structure to partially collapse over the front bedroom and hallway. The weight of the tree also pushed the front exterior wall inward, cracking the masonry and displacing the window frame in the front bedroom. The insured was home at the time but was in the basement recreation room and was not injured.
+
+Emergency tree removal was performed the following morning to prevent further structural compromise. A tarp was placed over the damaged roof area; however, rain and snow in the days following the loss resulted in additional water intrusion into the bedroom, hallway, and living room areas.
+
+--------------------------------------------------------------------------------
+DAMAGES
+--------------------------------------------------------------------------------
+
+Structure:
+The roof structure sustained a partial collapse over a roughly 15-by-20-foot area, with broken rafters, shattered decking, and destroyed shingles. The front bedroom ceiling collapsed entirely, and the hallway ceiling sustained severe cracking and bowing. The northwest exterior masonry wall has significant cracking and displacement, and the front bedroom window and frame were destroyed. Roof framing in the affected area will require full replacement including new rafters, decking, underlayment, and shingles.
+
+Interior damage from the tree impact includes the complete loss of the front bedroom, including drywall, flooring, trim, and closet systems. The hallway flooring and walls sustained water damage from the delayed intrusion. The living room, which is adjacent to the impact zone, has ceiling cracking and water staining along the shared wall. The finished basement directly below the impact area received moderate water damage, with saturated carpet and damaged drywall along the north wall.
+
+An engineering assessment was completed, confirming the home is structurally repairable. A contractor estimate has been obtained, and we have reached an agreed scope of repair with the insured at $162,500 for structural repairs.
+
+Contents:
+The front bedroom furnishings, including a queen bed set, dresser, nightstand, and personal effects, were destroyed by the tree impact and subsequent water damage. Hallway and living room contents sustained moderate water and debris damage. A contents inventory has been submitted by the insured totaling $22,400 in claimed losses. We have reviewed and agreed to $19,850 based on replacement cost valuation, with depreciation holdback of $4,200 pending completion of replacement.
+
+Additional Living Expenses / Loss of Use:
+The insured vacated the residence for 21 days during emergency stabilization and initial repairs. The insured has since returned to the home, residing in the unaffected portions while repairs are underway. ALE expenses to date total $3,150 for hotel and meals during the displacement period.
+
+Subrogation & Salvage:
+Subrogation potential is not anticipated as the loss was caused by a natural weather event. The downed tree was removed and disposed of; no salvage value is anticipated.
+
+What Has Changed:
+Since the initial report, we have completed the engineering assessment confirming repairability. An agreed scope of structural repair has been reached at $162,500. The contents inventory has been reviewed and agreed at $19,850 RCV. The insured has returned to the home and ALE exposure has been finalized at $3,150. Reserves have been adjusted to reflect agreed amounts.
+
+--------------------------------------------------------------------------------
+CLAIM FINANCIAL DETAIL
+--------------------------------------------------------------------------------
+
+Coverage    | Paid to Date  | New Reserve   | Net Change    | New Incurred
+------------|---------------|---------------|---------------|---------------
+Cov A       | $48,750.00    | $113,750.00   | ($12,500.00)  | $162,500.00
+Cov B       | $0.00         | $0.00         | $0.00         | $0.00
+Cov C       | $7,825.00     | $12,025.00    | ($3,150.00)   | $19,850.00
+Cov D       | $3,150.00     | $0.00         | $150.00       | $3,150.00
+------------|---------------|---------------|---------------|---------------
+TOTAL       | $59,725.00    | $125,775.00   | ($15,500.00)  | $185,500.00
+
+--------------------------------------------------------------------------------
+REINSURANCE FINANCIAL REPORTING
+--------------------------------------------------------------------------------
+
+Reinsurance Coordinator: Patricia Langford
+Phone: (317) 555-4820
+Email: plangford@indianafarmers.com
+
+CLAIM DETAIL — PART OF ULTIMATE NET LOSS (UNL)
+
+  INCURRED:
+    Co's Total Inc. UNL:              $185,500.00
+    Treaty Retention:                 $250,000.00
+    Excess Incurred UNL Rec.:         $0.00
+    Less Paid UNL Recovery:           $0.00
+    Outstanding UNL Recoverable:      $0.00
+
+  PAID:
+    Co's Total Paid UNL:              $59,725.00
+    Treaty Retention:                 $250,000.00
+    Excess Paid UNL Recovery:         $0.00
+    Less Prior Reinsurance Billings:  $0.00
+    Reinsurance Now Due:              $0.00
+
+--------------------------------------------------------------------------------
+PLAN OF ACTION & SIGN-OFF
+--------------------------------------------------------------------------------
+
+Date: March 10, 2026
+Name of Adjuster: Rachel Simmons
+
+Plan of Action:
+- Monitor structural repairs to completion and process progress payments.
+- Process depreciation holdback on contents upon proof of replacement.
+- Finalize all ALE documentation and close coverage D.
+- Obtain completion certificate from contractor upon finish of repairs.
+- Process final payment and close claim file upon completion.
+- Continued reporting as needed.
+
+================================================================================
+END OF LARGE LOSS REPORT
+================================================================================

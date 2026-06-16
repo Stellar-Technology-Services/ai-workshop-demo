@@ -1,0 +1,124 @@
+================================================================================
+LARGE LOSS REPORT (LLR) — PROPERTY
+================================================================================
+
+Report Type: Closing Report
+Reinsurance Notified: No
+
+--------------------------------------------------------------------------------
+CLAIM OVERVIEW
+--------------------------------------------------------------------------------
+
+Name of Adjuster: Rachel Simmons
+Claim Number: 1268493
+Name of Insured: Gregory & Maria Dalton
+Policy Number: HOM1987350
+Policy Period: 04/01/2025 - 04/01/2026
+Agent Notified: Yes
+Name of Agency: Wabash Valley Insurance DBA: Stanton Agency
+Agency Location: Lafayette, IN
+
+--------------------------------------------------------------------------------
+COVERAGE ISSUES
+--------------------------------------------------------------------------------
+
+The policy was in force on the date of loss. There appear to be no coverage concerns as vehicle impact by a third party is a covered peril. Applicable Forms: HO 0003, HO 0490, HOM 1015. Coverages: Coverage A: $245,000 RCV, Coverage B: $24,500, Coverage C: $171,500 RCV, Coverage D: ALS - 12 months from DOL. Deductible: $1,000.00.
+
+--------------------------------------------------------------------------------
+LOSS INFORMATION
+--------------------------------------------------------------------------------
+
+Date of Loss: 10/04/2025
+Date Reported: 10/04/2025
+Loss Location: 3281 Greenbush Street, Lafayette, Indiana 47904
+
+Risk:
+The risk is a two-story frame colonial residence constructed in 1985. The dwelling has vinyl siding over wood-frame construction with an asphalt architectural shingle roof. The home includes four bedrooms, two and a half bathrooms, a two-car attached garage, and a full partially finished basement. The property was in good condition prior to the loss and is located on a corner lot at the intersection of Greenbush Street and Maple Avenue.
+
+Interest and Title:
+Purdue Federal Credit Union is listed as first mortgage holder. The insured confirmed the outstanding balance was approximately $135,000 at the time of loss.
+
+Cause of Loss:
+On 10/04/2025 at approximately 11:20 PM, a pickup truck traveling eastbound on Maple Avenue failed to negotiate the curve at the intersection with Greenbush Street and left the roadway at high speed. The vehicle crossed the insured's front yard, struck and destroyed a section of landscaping retaining wall, and impacted the southwest corner of the dwelling at the attached garage.
+
+The vehicle penetrated the garage wall and came to rest inside the garage bay. The driver was transported by ambulance with non-life-threatening injuries. The Lafayette Police Department responded and a crash report was filed. The driver was cited for operating a vehicle while intoxicated and reckless driving.
+
+The impact caused an immediate rupture of the gas line entering the home at the garage wall, and the gas company was called to isolate the supply. No fire resulted from the gas leak. The insured and family were asleep upstairs at the time of the incident and were not injured.
+
+--------------------------------------------------------------------------------
+DAMAGES
+--------------------------------------------------------------------------------
+
+Structure:
+The attached two-car garage sustained severe structural damage. The southwest corner wall was destroyed over a roughly 12-foot span, including the wall framing, siding, sheathing, and foundation stem wall. The garage roof structure was compromised due to the loss of the supporting wall, with sagging trusses and displaced sheathing. One of the two overhead garage doors and its track system were destroyed. The garage slab sustained cracking from the vehicle impact.
+
+The adjacent main-level laundry room and half bathroom, which share a common wall with the garage, sustained wall displacement, cracked drywall, and damage to plumbing fixtures. The gas supply line at the meter was severed, requiring a new service connection. The HVAC ductwork routed through the garage ceiling was damaged and required partial replacement.
+
+All structural repairs have been completed. The garage was reconstructed with a new foundation stem wall section, reframed walls, new sheathing and siding, replacement overhead door, and roof repairs. The laundry room and half bathroom were restored to pre-loss condition. Final cost of structural repair was $118,325.
+
+Contents:
+Garage contents including a riding lawn mower, power tools, bicycles, sporting equipment, and seasonal storage items sustained damage from the vehicle impact and debris. A contents inventory was submitted and agreed at $14,275 at replacement cost. Depreciation holdback of $2,850 was released upon proof of replacement. All contents have been settled.
+
+Additional Living Expenses / Loss of Use:
+The insured family remained in the home throughout repairs, as the damage was confined to the garage and adjacent rooms. No ALE expenses were incurred.
+
+Subrogation & Salvage:
+Subrogation was pursued against the at-fault driver's auto liability carrier (Progressive Insurance, policy confirmed). A subrogation demand was submitted for the full claim amount of $132,600. We received a recovery of $132,600 representing full reimbursement of our outlay. The deductible of $1,000 has been refunded to the insured from the recovery. No salvage value was applicable.
+
+What Has Changed:
+Since the prior report, all structural repairs have been completed and final payment issued. Contents have been fully settled including depreciation holdback. Subrogation recovery of $132,600 was received in full from the at-fault driver's auto carrier. The insured's deductible has been refunded. This file is being closed.
+
+--------------------------------------------------------------------------------
+CLAIM FINANCIAL DETAIL
+--------------------------------------------------------------------------------
+
+Coverage    | Paid to Date  | New Reserve   | Net Change    | New Incurred
+------------|---------------|---------------|---------------|---------------
+Cov A       | $118,325.00   | $0.00         | ($6,675.00)   | $118,325.00
+Cov B       | $0.00         | $0.00         | $0.00         | $0.00
+Cov C       | $14,275.00    | $0.00         | ($725.00)     | $14,275.00
+Cov D       | $0.00         | $0.00         | $0.00         | $0.00
+------------|---------------|---------------|---------------|---------------
+TOTAL       | $132,600.00   | $0.00         | ($7,400.00)   | $132,600.00
+
+--------------------------------------------------------------------------------
+REINSURANCE FINANCIAL REPORTING
+--------------------------------------------------------------------------------
+
+Reinsurance Coordinator: Patricia Langford
+Phone: (317) 555-4820
+Email: plangford@indianafarmers.com
+
+CLAIM DETAIL — PART OF ULTIMATE NET LOSS (UNL)
+
+  INCURRED:
+    Co's Total Inc. UNL:              $132,600.00
+    Treaty Retention:                 $250,000.00
+    Excess Incurred UNL Rec.:         $0.00
+    Less Paid UNL Recovery:           $0.00
+    Outstanding UNL Recoverable:      $0.00
+
+  PAID:
+    Co's Total Paid UNL:              $132,600.00
+    Treaty Retention:                 $250,000.00
+    Excess Paid UNL Recovery:         $0.00
+    Less Prior Reinsurance Billings:  $0.00
+    Reinsurance Now Due:              $0.00
+
+--------------------------------------------------------------------------------
+PLAN OF ACTION & SIGN-OFF
+--------------------------------------------------------------------------------
+
+Date: March 20, 2026
+Name of Adjuster: Rachel Simmons
+
+Plan of Action:
+- All repairs completed and final payment issued.
+- All contents settled and depreciation holdback released.
+- Subrogation recovery received in full.
+- Insured deductible refunded.
+- Close claim file.
+
+================================================================================
+END OF LARGE LOSS REPORT
+================================================================================

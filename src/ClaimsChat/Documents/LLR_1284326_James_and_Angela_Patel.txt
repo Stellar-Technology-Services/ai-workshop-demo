@@ -1,0 +1,126 @@
+================================================================================
+LARGE LOSS REPORT (LLR) — PROPERTY
+================================================================================
+
+Report Type: First Report
+Reinsurance Notified: Yes
+
+--------------------------------------------------------------------------------
+CLAIM OVERVIEW
+--------------------------------------------------------------------------------
+
+Name of Adjuster: Derek Holliday
+Claim Number: 1284326
+Name of Insured: James & Angela Patel
+Policy Number: HOM2187620
+Policy Period: 05/10/2025 - 05/10/2026
+Agent Notified: Yes
+Name of Agency: Lakeshore Insurance Services DBA: Miller-Cook Agency
+Agency Location: Valparaiso, IN
+
+--------------------------------------------------------------------------------
+COVERAGE ISSUES
+--------------------------------------------------------------------------------
+
+The policy was in force on the date of loss. There appear to be no coverage concerns as lightning is a covered peril. Applicable Forms: HO 0003, HO 0490, HO 0420, HOM 1015, HOM 1019. Coverages: Coverage A: $410,000 RCV with additional 20% AAOI endorsement, Coverage B: $41,000, Coverage C: $287,000 RCV, Coverage D: ALS - 12 months from DOL. Deductible: $1,000.00.
+
+--------------------------------------------------------------------------------
+LOSS INFORMATION
+--------------------------------------------------------------------------------
+
+Date of Loss: 03/30/2026
+Date Reported: 03/30/2026
+Loss Location: 784 Sunset Ridge Drive, Valparaiso, Indiana 46383
+
+Risk:
+The risk is a two-story contemporary-style residence constructed in 2012. The dwelling has fiber cement siding with stone veneer accents and an architectural asphalt shingle roof. The home includes five bedrooms, three and a half bathrooms, a three-car attached garage, a finished walkout basement, and an open-concept main level. The property is in excellent condition and is located in a newer subdivision with homes of similar age and quality. The home appears to be insured to value based on current construction costs in the area.
+
+Interest and Title:
+Centier Bank is listed as first mortgage holder. The insured confirmed the outstanding balance is approximately $315,000.
+
+Cause of Loss:
+On 03/30/2026 at approximately 9:45 PM during a severe thunderstorm, a lightning bolt struck the chimney chase on the north side of the residence. The strike caused an immediate explosion of masonry material at the chimney top, sending debris across the roof surface and into the adjacent yard. The lightning energy traveled through the chimney flue liner and into the home's electrical and gas systems.
+
+The insured reported hearing a loud explosion followed by the immediate loss of all electrical power. Within moments, the insured detected a strong smell of natural gas and observed sparking from an outlet in the family room adjacent to the fireplace. The insured evacuated the family and called 911. The Valparaiso Fire Department responded and identified a small fire that had started within the wall cavity behind the family room fireplace surround. Firefighters extinguished the fire and the gas company isolated the gas supply to the home.
+
+A subsequent investigation conducted by Michael Reardon with Northern Indiana Fire Analysis confirmed the lightning strike as the origin of the loss. The electrical surge damaged the home's entire electrical panel, wiring throughout the north wing of the home, and multiple connected systems including HVAC, appliances, and electronics. The gas line damage was confined to the fireplace supply line.
+
+--------------------------------------------------------------------------------
+DAMAGES
+--------------------------------------------------------------------------------
+
+Structure:
+The chimney chase sustained complete destruction of the upper masonry section above the roofline, with the flue liner shattered from the strike point downward approximately eight feet. The surrounding roof area sustained impact damage from ejected masonry debris across approximately 200 square feet, including broken shingles, dented drip edge, and punctured underlayment. The chimney will require full reconstruction from the roofline up, and the flue liner will need complete replacement.
+
+The family room wall cavity adjacent to the fireplace sustained fire damage to framing, insulation, and drywall over a roughly 8-by-10-foot area. The electrical panel is a total loss and the home will require significant rewiring, particularly in the north wing where the surge path was concentrated. The HVAC system, including the furnace control board, air conditioning condenser, and smart thermostat, were destroyed by the electrical surge. The gas fireplace unit and supply line will require complete replacement. Water damage from fire suppression is limited to the family room and adjacent hallway.
+
+The dwelling is repairable. We are coordinating estimates from an electrician, HVAC contractor, and general contractor to develop a comprehensive repair scope. Initial estimates indicate total structural repair costs in the range of $175,000 to $200,000 due to the extensive electrical and mechanical system replacements required.
+
+Contents:
+The electrical surge caused widespread damage to electronics and appliances throughout the home. Confirmed losses include a home theater system, four televisions, two desktop computers, a gaming console, kitchen appliances connected to damaged circuits (refrigerator, dishwasher, microwave, range), garage door openers, and a whole-house audio system. The insured is compiling a detailed electronics and appliance inventory. Family room contents near the fireplace sustained smoke and minor fire damage. Preliminary contents estimate is $65,000 to $80,000.
+
+Additional Living Expenses / Loss of Use:
+The residence is not habitable due to the total loss of electrical service and gas system isolation. The insured family of five is currently staying at a nearby hotel. We are assisting the insured in locating a furnished rental property for the anticipated three- to four-month repair period.
+
+Subrogation & Salvage:
+Subrogation potential is not anticipated as the loss is attributed to a natural lightning event. No salvage value is anticipated, though the damaged electronics may have minor recycling value.
+
+What Has Changed:
+This is our initial report.
+
+--------------------------------------------------------------------------------
+CLAIM FINANCIAL DETAIL
+--------------------------------------------------------------------------------
+
+Coverage    | Paid to Date  | New Reserve   | Net Change    | New Incurred
+------------|---------------|---------------|---------------|---------------
+Cov A       | $0.00         | $195,000.00   | $195,000.00   | $195,000.00
+Cov B       | $0.00         | $0.00         | $0.00         | $0.00
+Cov C       | $0.00         | $72,000.00    | $72,000.00    | $72,000.00
+Cov D       | $0.00         | $24,000.00    | $24,000.00    | $24,000.00
+------------|---------------|---------------|---------------|---------------
+TOTAL       | $0.00         | $291,000.00   | $291,000.00   | $291,000.00
+
+--------------------------------------------------------------------------------
+REINSURANCE FINANCIAL REPORTING
+--------------------------------------------------------------------------------
+
+Reinsurance Coordinator: Patricia Langford
+Phone: (317) 555-4820
+Email: plangford@indianafarmers.com
+
+CLAIM DETAIL — PART OF ULTIMATE NET LOSS (UNL)
+
+  INCURRED:
+    Co's Total Inc. UNL:              $291,000.00
+    Treaty Retention:                 $250,000.00
+    Excess Incurred UNL Rec.:         $41,000.00
+    Less Paid UNL Recovery:           $0.00
+    Outstanding UNL Recoverable:      $41,000.00
+
+  PAID:
+    Co's Total Paid UNL:              $0.00
+    Treaty Retention:                 $0.00
+    Excess Paid UNL Recovery:         $0.00
+    Less Prior Reinsurance Billings:  $0.00
+    Reinsurance Now Due:              $0.00
+
+--------------------------------------------------------------------------------
+PLAN OF ACTION & SIGN-OFF
+--------------------------------------------------------------------------------
+
+Date: April 4, 2026
+Name of Adjuster: Derek Holliday
+
+Plan of Action:
+- Obtain final origin and cause investigation report from Northern Indiana Fire Analysis.
+- Coordinate electrical, HVAC, and general contractor estimates for comprehensive repair scope.
+- Assist insured in securing temporary housing for the family.
+- Coordinate with insured on electronics and appliance inventory.
+- Monitor reserve development as repair scope is finalized.
+- Continue coordination with reinsurance given incurred exceeds treaty retention.
+- Continued reporting.
+
+================================================================================
+END OF LARGE LOSS REPORT
+================================================================================

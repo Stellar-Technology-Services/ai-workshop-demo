@@ -1,0 +1,126 @@
+================================================================================
+LARGE LOSS REPORT (LLR) — PROPERTY
+================================================================================
+
+Report Type: First Report
+Reinsurance Notified: No
+
+--------------------------------------------------------------------------------
+CLAIM OVERVIEW
+--------------------------------------------------------------------------------
+
+Name of Adjuster: Thomas Beckett
+Claim Number: 1285740
+Name of Insured: Christine & Robert Nakamura
+Policy Number: HOM2211530
+Policy Period: 11/20/2025 - 11/20/2026
+Agent Notified: Yes
+Name of Agency: Pinnacle Insurance Partners
+Agency Location: Bloomington, IN
+
+--------------------------------------------------------------------------------
+COVERAGE ISSUES
+--------------------------------------------------------------------------------
+
+The policy was in force on the date of loss. There appear to be no coverage concerns as water damage from a sudden and accidental discharge is a covered peril. Applicable Forms: HO 0003, HO 0490, HOM 1015, HOM 1019. Coverages: Coverage A: $195,000 RCV, Coverage B: $19,500, Coverage C: $136,500 RCV, Coverage D: ALS - 12 months from DOL. Deductible: $1,000.00.
+
+--------------------------------------------------------------------------------
+LOSS INFORMATION
+--------------------------------------------------------------------------------
+
+Date of Loss: 04/02/2026
+Date Reported: 04/03/2026
+Loss Location: 1145 East Wylie Street, Bloomington, Indiana 47401
+
+Risk:
+The risk is a one-and-a-half-story Cape Cod residence constructed in 1952. The dwelling has painted wood clapboard siding with an asphalt shingle roof. The home includes three bedrooms (one on the main level and two on the upper half-story), one full bathroom and one half bathroom, a detached single-car garage, and a partial unfinished basement with stone foundation walls. The home has been well maintained and updated over the years, with a remodeled kitchen completed in 2021 and a bathroom renovation completed in 2023.
+
+Interest and Title:
+Indiana University Credit Union is listed as first mortgage holder. The insured confirmed the outstanding balance is approximately $112,000.
+
+Cause of Loss:
+On 04/02/2026, the insured returned home from a five-day vacation to discover standing water throughout the main level of the residence. Upon investigation, the insured found that a supply line to the second-floor bathroom toilet had failed at the compression fitting, allowing a continuous flow of water for an estimated four to five days.
+
+Water had saturated the second-floor bathroom, migrated through the floor system into the main-level kitchen and living room ceilings below, and continued downward into the basement. The insured immediately shut off the main water supply and contacted the insurance company the following morning.
+
+A plumber retained by the insured confirmed the failure was at the compression fitting connecting the braided stainless supply line to the shutoff valve. The fitting showed signs of corrosion and age-related deterioration. The supply line and valve were original to a bathroom renovation performed by a prior owner approximately 15 years ago. No evidence of external interference or improper installation was noted.
+
+--------------------------------------------------------------------------------
+DAMAGES
+--------------------------------------------------------------------------------
+
+Structure:
+The second-floor bathroom sustained complete saturation of subflooring, with visible warping and delamination of the plywood subfloor in the bathroom and extending into the adjacent upstairs hallway. Vinyl flooring in the bathroom has buckled and will require full replacement along with the subfloor. The toilet and vanity will need to be removed and reinstalled after floor repairs.
+
+The main-level kitchen ceiling directly below the bathroom has collapsed in a roughly 6-by-8-foot area, with saturated drywall, swollen framing, and damaged recessed lighting fixtures. The recently remodeled kitchen sustained water damage to upper cabinetry, crown molding, and painted walls. The living room ceiling has extensive water staining and sagging drywall along the common wall with the kitchen. Hardwood flooring on the main level shows cupping and buckling in the kitchen, dining area, and portions of the living room.
+
+The basement received significant water accumulation, with visible water staining on the stone foundation walls and standing water that was present for several days before discovery. A dehumidification and drying protocol is currently underway. We are monitoring moisture levels throughout the structure and anticipate the full extent of hidden damage will become clearer once demolition begins.
+
+Contents:
+Main-level contents sustained water damage, most significantly in the kitchen where countertop appliances, cookbooks, and decorative items were impacted by ceiling collapse debris and water. Living room furniture including a sofa, area rug, and entertainment console show water staining and swelling. The basement contained stored personal items including seasonal clothing, books, and family photo albums, many of which appear to be total losses. The insured is in the process of compiling a detailed contents inventory.
+
+Additional Living Expenses / Loss of Use:
+The residence remains habitable in the unaffected portions, and the insured has elected to remain in the home during repairs. No ALE expenses are anticipated at this time, though this may change once demolition and repair work begins.
+
+Subrogation & Salvage:
+Subrogation potential is under evaluation. The failed compression fitting and supply line have been preserved for examination. We are investigating whether a product defect may have contributed to the failure, though preliminary indications suggest age-related deterioration. No salvage value is anticipated.
+
+What Has Changed:
+This is our initial report.
+
+--------------------------------------------------------------------------------
+CLAIM FINANCIAL DETAIL
+--------------------------------------------------------------------------------
+
+Coverage    | Paid to Date  | New Reserve   | Net Change    | New Incurred
+------------|---------------|---------------|---------------|---------------
+Cov A       | $0.00         | $95,000.00    | $95,000.00    | $95,000.00
+Cov B       | $0.00         | $0.00         | $0.00         | $0.00
+Cov C       | $0.00         | $35,000.00    | $35,000.00    | $35,000.00
+Cov D       | $0.00         | $5,000.00     | $5,000.00     | $5,000.00
+------------|---------------|---------------|---------------|---------------
+TOTAL       | $0.00         | $135,000.00   | $135,000.00   | $135,000.00
+
+--------------------------------------------------------------------------------
+REINSURANCE FINANCIAL REPORTING
+--------------------------------------------------------------------------------
+
+Reinsurance Coordinator: Patricia Langford
+Phone: (317) 555-4820
+Email: plangford@indianafarmers.com
+
+CLAIM DETAIL — PART OF ULTIMATE NET LOSS (UNL)
+
+  INCURRED:
+    Co's Total Inc. UNL:              $135,000.00
+    Treaty Retention:                 $250,000.00
+    Excess Incurred UNL Rec.:         $0.00
+    Less Paid UNL Recovery:           $0.00
+    Outstanding UNL Recoverable:      $0.00
+
+  PAID:
+    Co's Total Paid UNL:              $0.00
+    Treaty Retention:                 $250,000.00
+    Excess Paid UNL Recovery:         $0.00
+    Less Prior Reinsurance Billings:  $0.00
+    Reinsurance Now Due:              $0.00
+
+--------------------------------------------------------------------------------
+PLAN OF ACTION & SIGN-OFF
+--------------------------------------------------------------------------------
+
+Date: April 8, 2026
+Name of Adjuster: Thomas Beckett
+
+Plan of Action:
+- Complete moisture monitoring and drying protocol throughout the structure.
+- Authorize controlled demolition to identify hidden water damage.
+- Obtain comprehensive structural repair estimate.
+- Coordinate with insured on contents inventory compilation.
+- Preserve failed plumbing components and evaluate subrogation potential.
+- Monitor reserves as full scope of damage becomes known.
+- Continued reporting.
+
+================================================================================
+END OF LARGE LOSS REPORT
+================================================================================
