@@ -6,7 +6,10 @@ namespace ClaimsChat.Services.SealedBox;
 // SEALED BOX — not a workshop exercise target.
 //
 // Loads the seeded documents, segments each into passages, and ranks them
-// lexically against the query. Thin glue over PassageSegmenter + LexicalRanker.
+// lexically against the query. The top-scoring passages are then expanded to
+// their full parent documents (deduped, highest-scoring passage per document
+// wins) so the model receives every section of the most relevant claims. Thin
+// glue over PassageSegmenter + LexicalRanker.
 public sealed class LexicalDocumentContextProvider : IDocumentContextProvider
 {
     private readonly IDbContextFactory<ClaimsChatDbContext> _factory;
@@ -14,18 +17,20 @@ public sealed class LexicalDocumentContextProvider : IDocumentContextProvider
     public LexicalDocumentContextProvider(IDbContextFactory<ClaimsChatDbContext> factory) =>
         _factory = factory;
 
-    public async Task<IReadOnlyList<RetrievedPassage>> RetrieveAsync(
-        string query, int maxPassages = 5, CancellationToken cancellationToken = default)
+    public async Task<IReadOnlyList<RetrievedDocument>> RetrieveDocumentsAsync(
+        string query, int maxDocuments = 3, CancellationToken cancellationToken = default)
     {
-        if (string.IsNullOrWhiteSpace(query))
+        if (string.IsNullOrWhiteSpace(query) || maxDocuments <= 0)
         {
-            return Array.Empty<RetrievedPassage>();
+            return Array.Empty<RetrievedDocument>();
         }
 
         await using var db = await _factory.CreateDbContextAsync(cancellationToken);
         var documents = await db.Documents
             .AsNoTracking()
             .ToListAsync(cancellationToken);
+
+        var bodyById = documents.ToDictionary(d => d.Id, d => d.Body);
 
         var passages = new List<DocumentPassage>();
         foreach (var doc in documents)
@@ -37,6 +42,35 @@ public sealed class LexicalDocumentContextProvider : IDocumentContextProvider
             }
         }
 
-        return LexicalRanker.Rank(passages, query, maxPassages);
+        // Rank every passage, then collapse to the best passage per document.
+        // Passages arrive ordered by descending score, so the first time a
+        // document appears is its top-scoring section.
+        var ranked = LexicalRanker.Rank(passages, query, passages.Count);
+
+        var seen = new HashSet<int>();
+        var results = new List<RetrievedDocument>();
+        foreach (var passage in ranked)
+        {
+            if (!seen.Add(passage.DocumentId))
+            {
+                continue;
+            }
+
+            results.Add(new RetrievedDocument(
+                passage.DocumentId,
+                passage.DocumentTitle,
+                passage.FileName,
+                passage.ClaimNumber,
+                passage.SectionTitle,
+                bodyById.GetValueOrDefault(passage.DocumentId, passage.Text),
+                passage.Score));
+
+            if (results.Count >= maxDocuments)
+            {
+                break;
+            }
+        }
+
+        return results;
     }
 }

@@ -7,13 +7,14 @@ namespace ClaimsChat.Services.SealedBox;
 //
 // Assembles the chat messages sent to the model: a system instruction that pins
 // the answer to the retrieved context (and tells the model to admit when the
-// context is empty), the context passages with source labels, then the question.
-// Pure and deterministic so it can be unit-tested without calling the model.
+// context is empty), the full text of the most relevant claim documents with
+// source labels, then the question. Pure and deterministic so it can be
+// unit-tested without calling the model.
 public static class GroundedPrompt
 {
     private const string SystemInstruction =
         "You are ClaimsChat, an assistant that answers questions about insurance claim documents " +
-        "(Large Loss Reports). Answer ONLY using the context passages provided below. " +
+        "(Large Loss Reports). Answer ONLY using the claim documents provided below. " +
         "If the context does not contain the answer, say you could not find it in the claim documents — " +
         "do not guess and do not use outside knowledge. When you answer, cite the claim number and section you used. " +
         "When you cannot answer, briefly guide the user: suggest asking about a specific claim's cause of loss, " +
@@ -22,36 +23,31 @@ public static class GroundedPrompt
         "figures across all claims.";
 
     private const string NoContextNotice =
-        "No relevant passages were found in the claim documents for this question.";
+        "No relevant claim documents were found for this question.";
 
-    public static List<ChatMessage> Build(IReadOnlyList<RetrievedPassage> passages, string question)
+    public static List<ChatMessage> Build(IReadOnlyList<RetrievedDocument> documents, string question)
     {
         var system = new StringBuilder();
         system.Append(SystemInstruction);
-        system.Append("\n\nContext passages:\n");
+        system.Append("\n\nClaim documents:\n");
 
-        if (passages.Count == 0)
+        if (documents.Count == 0)
         {
             system.Append(NoContextNotice);
         }
         else
         {
-            for (var i = 0; i < passages.Count; i++)
+            for (var i = 0; i < documents.Count; i++)
             {
-                var p = passages[i];
-                system.Append($"\n[{i + 1}] Source: {p.DocumentTitle}");
-                if (!string.IsNullOrWhiteSpace(p.ClaimNumber))
+                var doc = documents[i];
+                system.Append($"\n[{i + 1}] Source: {doc.DocumentTitle}");
+                if (!string.IsNullOrWhiteSpace(doc.ClaimNumber))
                 {
-                    system.Append($" (Claim {p.ClaimNumber})");
-                }
-
-                if (!string.IsNullOrWhiteSpace(p.SectionTitle))
-                {
-                    system.Append($" — Section: {p.SectionTitle}");
+                    system.Append($" (Claim {doc.ClaimNumber})");
                 }
 
                 system.Append('\n');
-                system.Append(p.Text);
+                system.Append(doc.Body);
                 system.Append('\n');
             }
         }

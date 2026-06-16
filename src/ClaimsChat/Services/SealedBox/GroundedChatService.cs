@@ -5,12 +5,13 @@ namespace ClaimsChat.Services.SealedBox;
 
 // SEALED BOX — not a workshop exercise target.
 //
-// Glue: retrieve passages for the question, assemble the grounded prompt, and
-// stream the model's answer. Citations are the retrieved passages, surfaced to
-// the UI up front so they can render once the answer finishes.
+// Glue: retrieve the most relevant claim documents for the question, assemble
+// the grounded prompt from their full text, and stream the model's answer.
+// Citations are the retrieved documents, surfaced to the UI up front so they
+// can render once the answer finishes.
 public sealed class GroundedChatService : IGroundedChatService
 {
-    private const int MaxPassages = 3;
+    private const int MaxDocuments = 3;
 
     private readonly IDocumentContextProvider _retrieval;
     private readonly IChatClient _chatClient;
@@ -24,9 +25,9 @@ public sealed class GroundedChatService : IGroundedChatService
     public async Task<GroundedChatResult> AskAsync(
         string question, CancellationToken cancellationToken = default)
     {
-        var passages = await _retrieval.RetrieveAsync(question, MaxPassages, cancellationToken);
-        var messages = GroundedPrompt.Build(passages, question);
-        return new GroundedChatResult(passages, Stream(messages, cancellationToken));
+        var documents = await _retrieval.RetrieveDocumentsAsync(question, MaxDocuments, cancellationToken);
+        var messages = GroundedPrompt.Build(documents, question);
+        return new GroundedChatResult(documents, Stream(messages, cancellationToken));
     }
 
     private async IAsyncEnumerable<string> Stream(
