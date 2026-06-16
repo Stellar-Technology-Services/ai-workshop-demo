@@ -45,4 +45,17 @@ public class GroundedPromptTests
         Assert.Contains("could not find it in the claim documents", system);
         Assert.Contains("No relevant passages were found", system);
     }
+
+    [Fact]
+    public void Build_SystemInstruction_GuidesUnanswerableAndAggregateQuestions()
+    {
+        var messages = GroundedPrompt.Build(
+            new[] { Passage("Doc", "1", "S", "body") }, "How many claims?");
+
+        var system = messages.Single(m => m.Role == ChatRole.System).Text;
+        // Redirects the user toward answerable, single-claim questions...
+        Assert.Contains("cause of loss", system);
+        // ...and sets expectations that cross-claim aggregation is unsupported.
+        Assert.Contains("cannot total, count, or compare", system);
+    }
 }

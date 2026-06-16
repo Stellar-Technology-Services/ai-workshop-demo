@@ -22,4 +22,9 @@
     <ProjectReference Include="..\..\src\ClaimsChat\ClaimsChat.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="..\..\src\ClaimsChat\Documents\*.txt"
+          Link="Documents\%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
 </Project>

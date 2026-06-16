@@ -12,6 +12,16 @@
     passages, the model answers from them, and the answer streams back with its sources.
 </p>
 
+<div class="suggested-questions">
+    @foreach (var question in SuggestedQuestions.All)
+    {
+        <button type="button" class="chip" disabled="@_busy"
+                @onclick="() => SendSuggested(question)">
+            @question
+        </button>
+    }
+</div>
+
 <div class="chat-log">
     @foreach (var entry in _entries)
     {
@@ -128,6 +138,12 @@
             answer.IsStreaming = false;
             _busy = false;
         }
+    }
+
+    private async Task SendSuggested(string question)
+    {
+        _input = question;
+        await Send();
     }
 
     private async Task OnKeyDown(KeyboardEventArgs e)
