@@ -1,7 +1,7 @@
 @page "/documents/{Id:int}"
 @using ClaimsChat.Data
 @using Microsoft.EntityFrameworkCore
-@inject ClaimsChatDbContext Db
+@inject IDbContextFactory<ClaimsChatDbContext> DbFactory
 
 <PageTitle>@(_document?.Title ?? "Document") — ClaimsChat</PageTitle>
 
@@ -32,7 +32,8 @@ else
 
     protected override async Task OnInitializedAsync()
     {
-        _document = await Db.Documents.FirstOrDefaultAsync(d => d.Id == Id);
+        await using var db = await DbFactory.CreateDbContextAsync();
+        _document = await db.Documents.FirstOrDefaultAsync(d => d.Id == Id);
         _loaded = true;
     }
 }
