@@ -1,0 +1,21 @@
+﻿@inherits LayoutComponentBase
+
+<div class="page">
+    <header class="topbar">
+        <a class="brand" href="/">ClaimsChat</a>
+        <nav class="nav">
+            <NavLink href="" Match="NavLinkMatch.All">Home</NavLink>
+            <NavLink href="documents" Match="NavLinkMatch.Prefix">Documents</NavLink>
+            <NavLink href="chat" Match="NavLinkMatch.Prefix">Chat</NavLink>
+        </nav>
+    </header>
+    <main class="content">
+        @Body
+    </main>
+</div>
+
+<div id="blazor-error-ui" data-nosnippet>
+    An unhandled error has occurred.
+    <a href="." class="reload">Reload</a>
+    <span class="dismiss">🗙</span>
+</div>

@@ -1,0 +1,64 @@
+@page "/chat"
+@using Microsoft.Extensions.AI
+@inject IChatClient ChatClient
+
+<PageTitle>Chat — ClaimsChat</PageTitle>
+
+<h1>Chat</h1>
+
+<p class="muted">
+    Placeholder chat backed by a stub model. Ticket T3 adds lexical retrieval and
+    T4 swaps the stub for the real Azure AI Foundry model with streaming + citations.
+</p>
+
+<div class="chat-log">
+    @foreach (var msg in _messages)
+    {
+        <div class="chat-msg @(msg.Role == ChatRole.User ? "user" : "assistant")">
+            <strong>@(msg.Role == ChatRole.User ? "You" : "Assistant"):</strong>
+            <span>@msg.Text</span>
+        </div>
+    }
+</div>
+
+<div class="chat-input">
+    <input @bind="_input" @bind:event="oninput" @onkeydown="OnKeyDown"
+           placeholder="Ask a question..." disabled="@_busy" />
+    <button @onclick="Send" disabled="@(_busy || string.IsNullOrWhiteSpace(_input))">Send</button>
+</div>
+
+@code {
+    private readonly List<ChatMessage> _messages = new();
+    private string _input = string.Empty;
+    private bool _busy;
+
+    private async Task Send()
+    {
+        if (string.IsNullOrWhiteSpace(_input) || _busy)
+        {
+            return;
+        }
+
+        _busy = true;
+        _messages.Add(new ChatMessage(ChatRole.User, _input.Trim()));
+        _input = string.Empty;
+
+        try
+        {
+            var response = await ChatClient.GetResponseAsync(_messages);
+            _messages.AddRange(response.Messages);
+        }
+        finally
+        {
+            _busy = false;
+        }
+    }
+
+    private async Task OnKeyDown(KeyboardEventArgs e)
+    {
+        if (e.Key == "Enter")
+        {
+            await Send();
+        }
+    }
+}
