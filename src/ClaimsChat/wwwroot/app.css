@@ -116,6 +116,10 @@ body {
     color: #b42318;
 }
 
+.chat-streaming {
+    white-space: pre-wrap;
+}
+
 .chat-markdown {
     display: inline-block;
     width: 100%;
