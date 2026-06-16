@@ -6,12 +6,20 @@
 
 <p>
     A small demo app for chatting with claims documents. This is the workshop's
-    teaching vehicle — explore the <a href="documents">Documents</a> and
-    <a href="chat">Chat</a> pages.
+    teaching vehicle — browse the <a href="documents">Documents</a>, then ask
+    questions on the <a href="chat">Chat</a> page.
+</p>
+
+<p>
+    On <a href="chat">Chat</a>, lexical retrieval ranks the seeded claim documents
+    for your question, feeds the most relevant ones to an Azure OpenAI model, and
+    streams back a grounded answer with its sources. It answers about individual
+    claims (cause of loss, damages, coverage, financials) — not totals across all
+    claims. Try a suggested-question chip to start.
 </p>
 
 <p class="muted">
-    Skeleton (ticket T1): the app runs end-to-end with a stub chat model, so no
-    AI key is required yet. Preset documents, lexical retrieval, and the real
-    Azure AI Foundry model arrive in later tickets.
+    The retrieval and AI client are a sealed box; the ordinary app around them is
+    the teachable surface. No AI key configured? The Chat page falls back to a stub
+    model so the app still runs end-to-end.
 </p>

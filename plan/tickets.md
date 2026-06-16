@@ -155,6 +155,24 @@ out-of-band (SPEC §6). Until then this ticket can be built against the stub and
   do **not** reintroduce a circuit-scoped `DbContext`. `LexicalDocumentContextProvider` is registered scoped
   but depends only on the singleton factory — fine to leave, or make singleton if it gains no scoped deps.
 
+**Post-T4 refinements (DONE — from review + UX iteration)**
+- **Streaming render:** assistant answers stream as raw text, then parse through **Markdig** once on
+  completion (avoids per-chunk re-parsing and half-rendered-markdown flicker).
+- **Suggested-question chips:** one-click starters on the Chat page (`SuggestedQuestions.All`), each phrased
+  around a distinctive peril token so lexical retrieval reliably surfaces its target claim. A retrieval
+  harness (`SuggestedQuestionTests`) asserts every chip retrieves its expected claim — it caught and forced a
+  reword of one chip ("truck/house" → "vehicle/garage") that was pulling the wrong claim.
+- **Prompt steering:** the grounded prompt now redirects unanswerable questions and states it answers
+  individual claims but cannot total/count/compare across all claims (sets expectations for aggregate asks,
+  which lexical retrieval can't serve).
+- **Full-document grounding (hybrid):** `RetrieveAsync` (top passages) replaced by **`RetrieveDocumentsAsync`**
+  (`MaxDocuments = 3`): rank every passage, dedupe to the top distinct **documents** (highest-scoring passage
+  per doc wins), and feed each document's **full body** to the model. This answers single-claim questions that
+  span sections (coverage + damages + financials) which siloed passages couldn't. Citations and result types
+  moved from `RetrievedPassage` to **`RetrievedDocument`** (carries `Body`, `TopSectionTitle`, `Score`).
+  Context per call ~6–7.5K tokens (3 full LLRs) — still comfortable vs SPEC §7. Does **not** address
+  cross-claim aggregation (handled by the prompt steering + chips instead).
+
 ---
 
 ## T5 — Chat history persistence  ·  `TODO`

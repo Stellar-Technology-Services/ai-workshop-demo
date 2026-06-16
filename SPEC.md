@@ -20,7 +20,7 @@ These are intentionally **out of scope for v1**:
 - No authentication or multi-user support.
 - No external database infrastructure (no SQL Server, LocalDB, or Docker).
 - No MCP integrations (Jira / Context7).
-- Not a production-grade app. "Good enough + legible" is the bar.
+- Not a production-grade app. "Good enoughfor training + legible" is the bar.
 
 ## 3. Stack
 
@@ -31,14 +31,15 @@ These are intentionally **out of scope for v1**:
 | Persistence | **EF Core + SQLite** | Real ORM the team knows, zero infra, cross-platform clone-and-run; SQL Server is a connection-string swap if ever wanted |
 | Chat AI | **Azure OpenAI**, model **gpt-5.4** (deployment name is a config value; model swappable) | Enterprise-relatable; model is a config value |
 | AI client | **`Microsoft.Extensions.AI` (`IChatClient`)** over the Azure OpenAI SDK (`Azure.AI.OpenAI`) | Idiomatic .NET abstraction; model/provider stays a config value |
-| Retrieval | **Lightweight lexical / keyword matching** behind `IDocumentContextProvider` | No embeddings; bounds tokens; gives grounded "answer + citation"; vector retrieval is a clean future swap |
+| Retrieval | **Lightweight lexical / keyword matching** behind `IDocumentContextProvider` (ranks passages, then grounds answers in the full top-ranked documents) | No embeddings; gives grounded "answer + citation"; vector retrieval is a clean future swap |
+| Answer rendering | **Markdig** (raw HTML disabled) | Renders the model's markdown safely in the Blazor UI |
 
 ## 4. Core functionality (v1)
 
 1. **Preset documents** — a few small, curated, claims-related documents stored as plain **text/markdown** in the repo, seeded into SQLite on first run.
 2. **Document list view** — see the preset documents and their metadata.
-3. **Chat view** — ask a question; lexical retrieval selects the relevant passage(s); passage(s) + question are sent to the chat model; the answer streams back with a **source citation**.
-4. **Chat history** — persisted in SQLite.
+3. **Chat view** — ask a question (or click a **suggested-question chip**); lexical retrieval ranks passages and expands the best matches to their **full parent documents**; those documents + the question are sent to the chat model; the answer streams back (rendered as markdown) with **ranked source citations**. The grounding prompt keeps the model on the supplied documents and has it redirect questions it can't answer (it handles individual claims, not cross-claim aggregates).
+4. **Chat history** — persisted in SQLite. *(Planned — T5; not yet built.)*
 
 ## 5. Architecture & seams
 
@@ -47,11 +48,11 @@ Pipeline (intentionally legible):
 ```
 preset docs (seeded → SQLite)
         ↓
-IDocumentContextProvider   ← sealed box: lexical retrieval (never an exercise topic)
+IDocumentContextProvider   ← sealed box: lexical retrieval → full top-ranked documents (never an exercise topic)
         ↓
-chat service (Microsoft.Extensions.AI / IChatClient)   ← sealed box: AI call
+chat service (Microsoft.Extensions.AI / IChatClient)   ← sealed box: grounded prompt + AI call
         ↓
-Blazor Server UI (streaming chat)   ← teachable surface
+Blazor Server UI (streaming chat, markdown, citations)   ← teachable surface
 ```
 
 - **Sealed box:** retrieval and the AI client sit behind interfaces and are **never the subject of a workshop exercise**.

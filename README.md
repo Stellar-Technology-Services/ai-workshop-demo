@@ -88,6 +88,19 @@ cp src/ClaimsChat/appsettings.Development.example.json src/ClaimsChat/appsetting
   works too and overrides the file. Either way, nothing secret is committed.
 - Leave the values blank and the app simply uses the stub (clone-and-run stays intact).
 
+## Using the chat
+
+The Chat page answers questions about the seeded claim documents. Lexical retrieval
+ranks the documents for your question and feeds the **full text of the top few claims**
+to the model, which streams back a markdown answer with **ranked source citations**.
+
+- **Suggested-question chips** under the prompt are one-click starters, each phrased to
+  retrieve a specific claim reliably.
+- It answers about **individual claims** (cause of loss, damages, coverage, financials).
+  It deliberately **cannot** total, count, or compare figures **across all claims** — ask
+  about one claim at a time. Questions it can't answer get a short nudge toward ones it can.
+- With no AI key configured the page falls back to a stub model (see [AI configuration](#ai-configuration)).
+
 ## Project layout
 
 ```
