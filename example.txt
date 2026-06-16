@@ -1,0 +1,132 @@
+================================================================================
+LARGE LOSS REPORT (LLR) — PROPERTY
+================================================================================
+
+Report Type: [First Report / Updated Report / Closing Report]
+Reinsurance Notified: [Yes / No]
+
+--------------------------------------------------------------------------------
+CLAIM OVERVIEW
+--------------------------------------------------------------------------------
+
+Name of Adjuster: [Adjuster full name]
+Claim Number: [7-digit claim number]
+Name of Insured: [Insured name(s)]
+Policy Number: [Policy number, e.g. HOM#######]
+Policy Period: [MM/DD/YYYY - MM/DD/YYYY]
+Agent Notified: [Yes / No]
+Name of Agency: [Agency name including any DBA]
+Agency Location: [City, State]
+
+--------------------------------------------------------------------------------
+COVERAGE ISSUES
+--------------------------------------------------------------------------------
+
+[Narrative describing whether the policy was in force on the date of loss,
+any coverage concerns, applicable forms, coverage limits by line (A, B, C, D),
+endorsements, and deductible amount.]
+
+--------------------------------------------------------------------------------
+LOSS INFORMATION
+--------------------------------------------------------------------------------
+
+Date of Loss: [MM/DD/YYYY]
+Date Reported: [MM/DD/YYYY]
+Loss Location: [Full street address, City, State ZIP]
+
+Risk:
+[Description of the property — structure type, construction year, exterior
+materials, roof type, layout, overall condition, and any relevant details
+about the property or its use.]
+
+Interest and Title:
+[Mortgage holder name and position (first mortgage, second, etc.), approximate
+amount owed, and confirmation of accuracy from the insured.]
+
+Cause of Loss:
+[Detailed narrative of events leading to the loss, the sequence of discovery,
+emergency response, origin and cause investigation findings, investigator
+name and firm, and final determination of loss cause.]
+
+--------------------------------------------------------------------------------
+DAMAGES
+--------------------------------------------------------------------------------
+
+Structure:
+[Narrative describing structural damage — areas affected, extent of damage to
+roofing, framing, interior, water damage from suppression, scope of required
+repairs, and overall repairability assessment.]
+
+Contents:
+[Narrative describing personal property damage — types of damage (fire, smoke,
+soot, water), status of contents manipulation, and plan for identifying
+restorable vs. replacement items.]
+
+Additional Living Expenses / Loss of Use:
+[Description of habitability status, insured's current living situation,
+temporary housing needs and coordination plans.]
+
+Subrogation & Salvage:
+[Subrogation status and potential assessment. Salvage value assessment.]
+
+What Has Changed:
+[For first reports: "This is our initial report." For updates: summary of
+material changes since the prior report.]
+
+--------------------------------------------------------------------------------
+CLAIM FINANCIAL DETAIL
+--------------------------------------------------------------------------------
+
+Coverage    | Paid to Date  | New Reserve   | Net Change    | New Incurred
+------------|---------------|---------------|---------------|---------------
+Cov A       | $0.00         | $0.00         | $0.00         | $0.00
+Cov B       | $0.00         | $0.00         | $0.00         | $0.00
+Cov C       | $0.00         | $0.00         | $0.00         | $0.00
+Cov D       | $0.00         | $0.00         | $0.00         | $0.00
+------------|---------------|---------------|---------------|---------------
+TOTAL       | $0.00         | $0.00         | $0.00         | $0.00
+
+--------------------------------------------------------------------------------
+REINSURANCE FINANCIAL REPORTING
+--------------------------------------------------------------------------------
+
+Reinsurance Coordinator: [Full name]
+Phone: [Phone number]
+Email: [Email address]
+
+CLAIM DETAIL — PART OF ULTIMATE NET LOSS (UNL)
+
+  INCURRED:
+    Co's Total Inc. UNL:              $0.00
+    Treaty Retention:                 $0.00
+    Excess Incurred UNL Rec.:         $0.00
+    Less Paid UNL Recovery:           $0.00
+    Outstanding UNL Recoverable:      $0.00
+
+  PAID:
+    Co's Total Paid UNL:              $0.00
+    Treaty Retention:                 $0.00
+    Excess Paid UNL Recovery:         $0.00
+    Less Prior Reinsurance Billings:  $0.00
+    Reinsurance Now Due:              $0.00
+
+--------------------------------------------------------------------------------
+PLAN OF ACTION & SIGN-OFF
+--------------------------------------------------------------------------------
+
+Date: [Month Day, Year]
+Name of Adjuster: [Adjuster full name]
+
+Plan of Action:
+[Numbered or bulleted list of next steps for the claim, e.g.:
+- Finalize claim investigation.
+- Complete structural damage assessment.
+- Monitor and assess restorable contents.
+- Review inventory of non-restorable contents once received.
+- Monitor insured's temporary housing needs and ALE.
+- Monitor reserves to ensure they remain appropriate.
+- Continued reporting.]
+
+================================================================================
+END OF LARGE LOSS REPORT
+================================================================================
