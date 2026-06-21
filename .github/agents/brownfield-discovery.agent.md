@@ -36,7 +36,7 @@ Your job is to split repository-understanding work into parallel read-only threa
 - Cite concrete evidence from files for every important claim.
 - Call out uncertainty explicitly instead of guessing.
 
-## Discovery Workflow
+## Execution Pattern
 1. Restate objective, constraints, and success criteria.
 2. Decompose into 2-5 discovery threads with explicit evidence goals.
 3. Run parallel repository exploration and collect findings.
@@ -44,7 +44,7 @@ Your job is to split repository-understanding work into parallel read-only threa
 5. Identify hotspots, coupling points, and knowledge gaps.
 6. Return a concise briefing and a suggested next-investigation plan.
 
-## Discovery Brief Output
+## Output Format
 - Objective and constraints
 - Thread plan (thread name, owner/agent, deliverable)
 - Key findings per thread
