@@ -1,0 +1,30 @@
+@page "/stats"
+@using ClaimsChat.Data
+@using ClaimsChat.Services.Stats
+@using Microsoft.EntityFrameworkCore
+@inject IDbContextFactory<ClaimsChatDbContext> DbFactory
+
+<PageTitle>Stats — ClaimsChat</PageTitle>
+
+<h1>Stats</h1>
+
+@if (_report is null)
+{
+    <p class="muted">Loading…</p>
+}
+else
+{
+    <p class="muted">A tally across all seeded claim documents.</p>
+    <pre>@_report</pre>
+}
+
+@code {
+    private string? _report;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await using var db = await DbFactory.CreateDbContextAsync();
+        var documents = await db.Documents.ToListAsync();
+        _report = new ClaimsDashboard().Render(documents);
+    }
+}
