@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Session 2 Build-Along: ClaimsChat</title>
+  <link rel="stylesheet" href="deck.css" />
+</head>
+<body>
+  <div class="deck">
+
+    <section class="slide title active">
+      <div class="eyebrow">Session 2 · 100 min · Build-along</div>
+      <h1>Build-Along: ClaimsChat</h1>
+      <p class="subtitle">Structure a real repo for AI, then plan and ship a ticket end-to-end.</p>
+      <p class="muted">Follow along in your own clone.</p>
+    </section>
+
+    <section class="slide">
+      <h2>What we'll do</h2>
+      <ul>
+        <li>Configure VS Code + Copilot and set the agent's boundaries.</li>
+        <li>Structure the repo for AI: skills, rules, commands, prompts.</li>
+        <li>Analyze an unfamiliar codebase and manage context.</li>
+        <li>Plan a ticket, bound its scope, and build it end-to-end.</li>
+        <li>Review with a shared standard, then bank the gap wins.</li>
+        <li>Carry skills across tools, and leave with a living library.</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>The codebase: ClaimsChat</h2>
+      <ul>
+        <li>A real <strong>ASP.NET Core / Blazor Server</strong> app: C#/.NET, EF Core + SQLite.</li>
+        <li>Browse seeded claim documents, then ask questions about them in a streaming chat with citations.</li>
+        <li>Retrieval and the chat model do the heavy lifting; the app around them is ordinary .NET.</li>
+        <li>That ordinary surface (data, UI, features, tests) is where we work today.</li>
+      </ul>
+      <p class="muted">Existing, real, slightly messy. Not a greenfield toy.</p>
+      <p class="notes">Name ASP.NET explicitly (cohort of 15). The retrieval and AI internals are walled off behind interfaces; that comes through naturally when we open the folders, no need to announce it.</p>
+    </section>
+
+    <section class="slide">
+      <h2>First: set the intern's boundaries</h2>
+      <p class="tag">Least-privilege</p>
+      <ul>
+        <li>Configure VS Code + Copilot: sign-in, model, and <strong>tool/approval settings</strong>.</li>
+        <li>What can the agent touch? File/folder access, terminal, system prompting, indexing.</li>
+        <li>Default to <strong>least privilege</strong>; approve actions deliberately, not reflexively.</li>
+      </ul>
+      <p class="notes">This opens the secure-practices thread we'll keep pulling all session. The "adult in the room" from Session 1 sets the sandbox before handing over the keys.</p>
+    </section>
+
+    <section class="slide">
+      <h2>Structure a repo for AI</h2>
+      <p>VS Code offers several customization types, each for a different goal. At the end of the day, <strong>folders and files.</strong></p>
+      <table>
+        <thead><tr><th>Type</th><th>What it does</th><th>Lives in (VS Code)</th></tr></thead>
+        <tbody>
+          <tr><td>Instructions</td><td>Standards, conventions, structure: every request, or scoped to files</td><td><code>.github/copilot-instructions.md</code> · <code>.github/instructions/*.instructions.md</code></td></tr>
+          <tr><td>Prompt files</td><td>Reusable prompts you invoke as slash commands</td><td><code>.github/prompts/*.prompt.md</code></td></tr>
+          <tr><td>Agent skills</td><td>Multi-step workflows, scripts, resources, loaded when a task matches</td><td><code>.github/skills/&lt;name&gt;/SKILL.md</code></td></tr>
+          <tr><td>Custom agents</td><td>A specialized persona: own instructions, tools, model</td><td><code>.github/agents/*.agent.md</code></td></tr>
+        </tbody>
+      </table>
+      <p class="notes">Full descriptions to say aloud. Instructions: coding standards, conventions, and project structure, applied to every request or scoped to specific files. Prompt files: reusable prompts you invoke as slash commands in chat. Agent skills: multi-step workflows, scripts, and resources the agent loads when a task matches. Custom agents: a specialized persona with its own instructions, tool access, and model. We ship instructions, prompts, and skills in this repo today; custom agents are there when you want a persona. Show the actual files in the repo as you talk.</p>
+    </section>
+
+    <section class="slide">
+      <h2>Skills are English programs</h2>
+      <ul>
+        <li>A language: looser than C#, but a language with syntax and structure.</li>
+        <li><strong>Reproducible, not deterministic.</strong> You refine and fork them over time.</li>
+        <li>Same skill, different tool. The body is one <code>SKILL.md</code>; only the folder changes.</li>
+      </ul>
+      <table>
+        <thead><tr><th></th><th>Copilot</th><th>Cursor</th><th>Claude Code</th></tr></thead>
+        <tbody>
+          <tr><td>Skill (<code>SKILL.md</code>)</td><td><code>.github/skills/</code></td><td><code>.cursor/skills/</code></td><td><code>.claude/skills/</code></td></tr>
+          <tr><td>Always-on rules</td><td><code>copilot-instructions.md</code></td><td><code>AGENTS.md</code></td><td><code>CLAUDE.md</code> / <code>AGENTS.md</code></td></tr>
+        </tbody>
+      </table>
+      <p>One open standard, the tools increasingly read each other's folders: <a href="https://agentskills.io" target="_blank" rel="noopener">agentskills.io</a></p>
+      <p class="notes">Moved earlier on purpose: this sets the base before we use skills in the build. Click through to agentskills.io briefly. Verified paths (2026): Copilot in VS Code reads .github/skills, .claude/skills, and .agents/skills; AGENTS.md is the portable rules anchor.</p>
+    </section>
+
+    <section class="slide">
+      <h2>Analyze the codebase with AI</h2>
+      <ul>
+        <li>Point Copilot at ClaimsChat: "explain the architecture, map the data flow."</li>
+        <li>Aim it at the <strong>messy stats module</strong>, where a fast, accurate read saves the most time.</li>
+        <li><strong>Context management</strong>: give it the right files, not the whole repo.</li>
+      </ul>
+      <p class="muted">Daily-workflow skill #1: getting a fast, trustworthy read on unfamiliar code.</p>
+      <p class="notes">Use /explain-legacy here. The messy stats module computes the aggregates the chat deliberately can't. We'll also have a small VB.NET legacy snippet as a translate/explain target for that cohort.</p>
+    </section>
+
+    <section class="slide">
+      <h2>Plan the feature before touching code</h2>
+      <p class="tag">/plan-feature</p>
+      <p><strong>Ticket:</strong> let users exclude a document from what the chat can retrieve (soft-delete from retrieval).</p>
+      <ul>
+        <li>Decompose: data, seeding, retrieval, UI, tests.</li>
+        <li>Watch the scope balloon: audit log? bulk actions? settings page? <span class="warn">Bound it.</span></li>
+        <li>Be the adult: write down what's <em>out</em> of scope.</li>
+      </ul>
+      <p class="notes">Live callback to Session 1's scope-creep lesson. Let the agent propose extras, then visibly cut them. The plan is the contract.</p>
+    </section>
+
+    <section class="slide">
+      <h2>Build it, end to end</h2>
+      <ol>
+        <li><strong>Data</strong>: add <code>IncludedInRetrieval</code> + an EF <strong>migration</strong> <span class="muted">(hello, SQL)</span>.</li>
+        <li><strong>Seeder</strong>: default on insert, but <span class="warn">preserve the user's choice on re-seed</span>.</li>
+        <li><strong>Retrieval seam</strong>: a one-line filter, right where the app meets the retrieval internals.</li>
+        <li><strong>UI</strong>: a toggle + an "excluded" badge.</li>
+        <li><strong>Tests</strong>: excluded docs stay out; the flag survives re-seeding.</li>
+      </ol>
+      <p class="notes">The seeder step is the planted review beat: a naive impl clobbers the toggle every restart. The seam step is the teachable boundary: we scope data, we don't rewrite the ranking algorithm. Keep a reference solution branch handy as a safety net.</p>
+    </section>
+
+    <section class="slide">
+      <h2>Review with a shared standard</h2>
+      <p class="tag">/code-review</p>
+      <ul>
+        <li>Run the same review skill a senior would, on the diff we just produced.</li>
+        <li>Did it handle re-seeding? Null/empty cases? Did it stay out of the retrieval internals?</li>
+        <li>The standard is the artifact, not one person's memory.</li>
+      </ul>
+      <p class="notes">This is the reframed "PR review": survey said PR demos are lowest demand, so we do a shared-standard review of a diff, not a PR walkthrough.</p>
+    </section>
+
+    <section class="slide">
+      <h2>Gap wins: the easy, high-leverage stuff</h2>
+      <div class="cards">
+        <div class="card"><h3>Tests</h3><p><code>/generate-tests</code> for a service, the win you said you skip most.</p></div>
+        <div class="card"><h3>Release notes</h3><p><code>/release-notes</code> from the git log we just created.</p></div>
+        <div class="card"><h3>Infra/scripts</h3><p><code>/scaffold-ci</code>, reuse the CI we already wrote.</p></div>
+      </div>
+      <p class="notes">These three are the survey's "whitespace": mostly Never today, explicitly wanted. Quick wins they can take back Monday.</p>
+    </section>
+
+    <section class="slide">
+      <h2>Document for the next dev, and the next agent</h2>
+      <ul>
+        <li>Capture <strong>intent</strong> in code docs and comments, not just what the code does.</li>
+        <li>Write down the "why" a diff can't show: the decision, the constraint, the gotcha (like the re-seed trap).</li>
+        <li>The same docs that help a teammate help the <em>next agent</em> read this code. Context compounds.</li>
+      </ul>
+      <p class="notes">Dual-audience framing: humans and agents read the same files. We're updating code-level docs as part of this change, not rewriting the repo's AI config files.</p>
+    </section>
+
+    <section class="slide">
+      <h2>This repo is yours now</h2>
+      <ul>
+        <li>A <strong>living, shared skills library</strong>: fork it, improve the prompts, add your own.</li>
+        <li>Built for your stack: C#/.NET, SQL, ASP.NET, VB.NET.</li>
+      </ul>
+      <p class="hint">Clone it, break it, extend it. That's the assignment.</p>
+      <p class="notes">Close on the sustain story. Champions and a phone-a-friend pipeline come later, not today.</p>
+    </section>
+
+  </div>
+  <script src="deck.js"></script>
+</body>
+</html>

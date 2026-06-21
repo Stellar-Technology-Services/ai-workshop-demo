@@ -1,0 +1,143 @@
+/* Minimal static slideshow engine — no build step, opens via file://.
+   Each <section class="slide"> is one slide. deck.js shows one at a time. */
+
+:root {
+  --bg: #0f172a;
+  --panel: #1e293b;
+  --ink: #e2e8f0;
+  --muted: #94a3b8;
+  --accent: #38bdf8;
+  --accent-2: #a78bfa;
+  --good: #34d399;
+  --warn: #fbbf24;
+  --line: #334155;
+  --maxw: 1100px;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  height: 100%;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: "Segoe UI", system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  font-size: 26px;
+  line-height: 1.5;
+}
+
+.deck { height: 100vh; }
+
+/* Slides: hidden by default; the active one is shown by deck.js. */
+.slide {
+  display: none;
+  min-height: 100vh;
+  padding: 6vh 7vw 12vh;
+  flex-direction: column;
+  justify-content: center;
+}
+.slide.active { display: flex; }
+
+.slide.title {
+  justify-content: center;
+  align-items: flex-start;
+  background:
+    radial-gradient(1200px 600px at 80% -10%, rgba(56, 189, 248, 0.15), transparent),
+    radial-gradient(900px 500px at -10% 110%, rgba(167, 139, 250, 0.15), transparent);
+}
+
+h1 { font-size: 2.0em; margin: 0 0 0.2em; line-height: 1.1; }
+h2 { font-size: 1.4em; margin: 0 0 0.6em; color: var(--accent); }
+h3 { font-size: 1.0em; margin: 1em 0 0.3em; color: var(--accent-2); }
+p  { margin: 0.4em 0; max-width: var(--maxw); }
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.6em;
+  color: var(--muted);
+  margin-bottom: 1em;
+}
+.subtitle { color: var(--muted); font-size: 1.1em; }
+
+ul, ol { margin: 0.3em 0; padding-left: 1.2em; max-width: var(--maxw); }
+li { margin: 0.35em 0; }
+li::marker { color: var(--accent); }
+
+strong { color: #fff; }
+.muted { color: var(--muted); }
+.good { color: var(--good); }
+.warn { color: var(--warn); }
+
+code {
+  background: #0b1220;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 0.05em 0.4em;
+  font-size: 0.85em;
+  font-family: "Cascadia Code", "Fira Code", Consolas, monospace;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 0.6em 0;
+  font-size: 0.8em;
+  width: 100%;
+  max-width: var(--maxw);
+}
+th, td { border: 1px solid var(--line); padding: 0.4em 0.7em; text-align: left; vertical-align: top; }
+th { background: var(--panel); color: var(--accent); }
+
+.cards { display: flex; gap: 1em; flex-wrap: wrap; margin-top: 0.6em; }
+.card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 0.9em 1.1em;
+  flex: 1 1 280px;
+}
+.card h3 { margin-top: 0; }
+
+.tag {
+  display: inline-block;
+  font-size: 0.55em;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--bg);
+  background: var(--accent);
+  border-radius: 999px;
+  padding: 0.2em 0.7em;
+  vertical-align: middle;
+}
+
+/* Presenter notes — hidden until toggled with "n". */
+.notes {
+  display: none;
+  margin-top: 1.2em;
+  padding: 0.8em 1em;
+  border-left: 3px solid var(--accent-2);
+  background: rgba(167, 139, 250, 0.08);
+  color: var(--muted);
+  font-size: 0.7em;
+  max-width: var(--maxw);
+}
+.deck.show-notes .notes { display: block; }
+
+/* Footer chrome */
+.chrome {
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6em 1.4em;
+  font-size: 0.5em;
+  color: var(--muted);
+  background: linear-gradient(transparent, rgba(15, 23, 42, 0.9));
+  pointer-events: none;
+}
+.chrome .progress { height: 3px; background: var(--accent); width: 0; transition: width 0.2s ease; }
+.progress-track { position: fixed; top: 0; left: 0; right: 0; height: 3px; background: var(--line); }
+
+.hint { color: var(--muted); font-size: 0.55em; margin-top: 1.5em; }
+a { color: var(--accent); }

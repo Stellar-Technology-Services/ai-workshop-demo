@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Session 1: How Do I Use AI for Coding?</title>
+  <link rel="stylesheet" href="deck.css" />
+</head>
+<body>
+  <div class="deck">
+
+    <section class="slide title active">
+      <div class="eyebrow">Session 1 · 45 min</div>
+      <h1>How Do I Use AI for Coding?</h1>
+      <p class="subtitle">Mindset and workflow for a room that already ships with AI.</p>
+    </section>
+
+    <section class="slide">
+      <h2>What we'll cover</h2>
+      <ul>
+        <li>The 95/5 split, and managing AI like an intern.</li>
+        <li>The 5% that's actually yours: decomposition, judgment, knowing what not to build.</li>
+        <li>Context, pushing back, and overriding the model.</li>
+        <li>Scope creep, and being the adult in the room.</li>
+        <li>Version hygiene that matters once generation is cheap.</li>
+        <li>Making review repeatable across a team.</li>
+        <li>Where fluent output still bites in our stack.</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>This isn't a sales pitch</h2>
+      <ul>
+        <li>You've done the intro training. AI is already a daily companion for review, docs, and debugging.</li>
+        <li>100% of you verify before you ship. We are not going to relitigate whether you should.</li>
+        <li>So today isn't "should you" or "be careful." It's how strong users get stronger.</li>
+      </ul>
+      <p>The gap isn't capability. It's the workflow and judgment that separate <em>"the AI typed it"</em> from <em>"I directed it and I own it."</em></p>
+      <p class="notes">Survey: ~4/5 confidence, 100% verify, and "writing new code" sits at Weekly not Daily. That's a deliberate trust ceiling, not a skill gap. Naming it earns the room's attention and signals we read their input.</p>
+    </section>
+
+    <section class="slide">
+      <h2>Manage AI like an intern</h2>
+      <p>A brilliant, fast, eager intern who has never met your users.</p>
+      <ul>
+        <li><strong>95%</strong>: researching, typing, boilerplate, first drafts. <span class="muted">The intern is great here.</span></li>
+        <li><strong>5%</strong>: what to build, why, the constraints, the judgment call. <span class="good">That part is you.</span></li>
+      </ul>
+      <p>Your job shifts from <em>writing code</em> to <em>directing the work and owning the review.</em></p>
+      <p class="notes">The intern model is the spine of the session. Keep returning to it. It reframes "I didn't write this" anxiety into "I directed this and I'm accountable for it."</p>
+    </section>
+
+    <section class="slide">
+      <h2>What's actually in the 5%</h2>
+      <p>The intern can write almost anything. It still can't do these:</p>
+      <ul>
+        <li>Knowing <strong>what not to build.</strong></li>
+        <li><strong>Domain knowledge</strong> it doesn't have: your users, your business rules, how claims actually work.</li>
+        <li><strong>Judgment and taste</strong>: the tradeoff calls with no clean right answer.</li>
+        <li><strong>Accountability</strong>: your name is on the commit, not the model's.</li>
+      </ul>
+      <p class="muted">The model has the knowledge of the internet and the wisdom of none of it.</p>
+      <p class="notes">This slide is what stops the session feeling basic. The 5% is small in volume and huge in leverage. Everything downstream (scope, pushback, review) is just defending that 5%.</p>
+    </section>
+
+    <section class="slide">
+      <h2>The 5% is the hard part</h2>
+      <p>Prompting is useful. <strong>Understanding the problem and designing the solution is vital.</strong></p>
+      <ul>
+        <li>The bottleneck moved from <em>syntax</em> to <em>specification.</em></li>
+        <li>Decompose first: what exactly are we building, what's in scope, what does "done" look like?</li>
+        <li>A clear brief beats a clever prompt every time.</li>
+      </ul>
+      <p class="notes">If they remember one thing, it's this. It outlives any model or tool. The skill is decomposition, not phrasing.</p>
+    </section>
+
+    <section class="slide">
+      <h2>Decomposition in practice</h2>
+      <div class="cards">
+        <div class="card">
+          <h3 class="warn">Vague</h3>
+          <p>"Add a way to hide documents from the chat."</p>
+          <p class="muted">The model guesses the layer, sprawls across files, and you review a mess you didn't specify.</p>
+        </div>
+        <div class="card">
+          <h3 class="good">Decomposed</h3>
+          <p>"Add an <code>IncludedInRetrieval</code> flag on Document, default true. Filter it in retrieval. Add a toggle in the UI. Preserve the flag when documents re-seed. Cover it with a test."</p>
+          <p class="muted">Bounded, reviewable, hard to get subtly wrong.</p>
+        </div>
+      </div>
+      <p>The decomposition <em>is</em> the work. The model fills it in.</p>
+      <p class="notes">This is the exact ticket we build live next session, so it doubles as a teaser. Point out: same feature, wildly different review burden, purely from how it was specified.</p>
+    </section>
+
+    <section class="slide">
+      <h2>Right context, right time</h2>
+      <p>The intern has no memory of your intent. The context window is all it knows right now. <strong>You are its memory.</strong></p>
+      <ul>
+        <li>Context is a <strong>budget, not a bucket.</strong> Irrelevant files don't just waste space, they pull the model off track.</li>
+        <li>Separate <strong>standing context</strong> (repo conventions, what's off-limits) from <strong>task context</strong> (these files, this ticket). Set the first once, supply the second per job.</li>
+        <li>Stale or contradictory context produces confident, wrong answers. Curate it like you'd curate a brief.</li>
+        <li>Long threads rot. When a session fills with dead ends, a fresh start with a tight brief beats nursing the wreck.</li>
+      </ul>
+      <p class="muted">We'll set standing context with rules and instructions files in the next session.</p>
+      <p class="notes">Deeper than "point it at files." The real ideas: attention is a budget, you are the model's persistent memory, and standing vs task context is the distinction that pays off once you structure a repo (next session).</p>
+    </section>
+
+    <section class="slide">
+      <h2>Push back, and override</h2>
+      <p><strong>Fluent is not the same as correct.</strong></p>
+      <ul>
+        <li>It will defend a bad approach as smoothly as a good one.</li>
+        <li>It agrees with you too easily. Agreement is not validation.</li>
+        <li>Your move: challenge assumptions, ask for alternatives and tradeoffs, make it justify the choice.</li>
+        <li>You are allowed to overrule it, and often you should.</li>
+      </ul>
+      <p class="muted">A "pushback" skill packages this so it isn't just instinct.</p>
+      <p class="notes">Ties to the pushback skill we ship. The point: keep your own judgment in the loop. The model is a strong advisor, not the decision-maker.</p>
+    </section>
+
+    <section class="slide">
+      <h2>Be the adult in the room</h2>
+      <p>AI is great at writing code. It has <strong>no concept of scope creep.</strong></p>
+      <ul>
+        <li>It notices what's "missing," what "could" be nice, what it "could" refactor next door.</li>
+        <li>It optimizes for being helpful, not for shipping the smallest correct change.</li>
+        <li>Left alone, a one-line fix becomes a five-file detour.</li>
+        <li>Deciding <strong>what not to build</strong> is your job. Write down what's out of scope.</li>
+      </ul>
+      <p class="notes">Next session the soft-delete ticket visibly balloons (add an audit log, bulk actions, a settings page) and we cut it back live. "Be the adult" is the line they'll remember.</p>
+    </section>
+
+    <section class="slide">
+      <h2>Version hygiene, once generation is cheap</h2>
+      <p>The old advice (commit often, small branches) still holds. Here's what actually changes with AI:</p>
+      <ul>
+        <li><strong>Review the diff, not the chat.</strong> The agent's summary is a claim. The diff is the truth.</li>
+        <li>Keep changes <strong>bisectable</strong>: a bad AI change should be one clean revert, not an archaeology dig.</li>
+        <li><strong>Guard the irreversible actions.</strong> Force-pushes, history rewrites, hard resets, and committed secrets are hard or impossible to undo. Make the agent ask first.</li>
+        <li>Branches make experiments <strong>disposable</strong>: run an approach, keep the winner, throw the rest away.</li>
+      </ul>
+      <p class="notes">"Review the diff, not the chat" is the keeper line. Reversibility and trust boundaries matter more than ever because the volume of generated change went up.</p>
+    </section>
+
+    <section class="slide">
+      <h2>Make review repeatable</h2>
+      <p>Today, review quality rides on one person's experience and memory.</p>
+      <ul>
+        <li>That doesn't transfer: to teammates, to new hires, to the next team, or to you in six months.</li>
+        <li>Package the review instincts into <strong>shared, runnable standards</strong> so the review is the same no matter who runs it.</li>
+        <li><strong>Teams differ.</strong> Each team should align on the skills and standards that fit <em>their</em> work. There is no one rule for everyone.</li>
+      </ul>
+      <p>The best skills aren't generic. They carry the <strong>specifics of the work</strong> they're built for.</p>
+      <p class="notes">Dropped the "fork it, not a mandate" line (too on-the-nose). The keeper idea: a standard earns its keep by being specific to the team's actual work, not by being universal. Leadership wants consistency, the survey warned against one-size-fits-all, and specificity is how both hold.</p>
+    </section>
+
+    <section class="slide">
+      <h2>Where fluent output still bites</h2>
+      <p>The danger isn't bad code that looks bad. It's wrong code that reads perfectly.</p>
+      <table>
+        <thead><tr><th>Stack</th><th>Common trap</th></tr></thead>
+        <tbody>
+          <tr><td>C#/.NET</td><td>Invented APIs, wrong overloads, dated patterns, async misuse</td></tr>
+          <tr><td>SQL/T-SQL</td><td>Dialect drift, N+1 from EF, queries that "work" but won't scale</td></tr>
+          <tr><td>VB.NET / legacy</td><td>Confidently "modernizes" away behavior you actually needed</td></tr>
+        </tbody>
+      </table>
+      <p>A veteran who knows this code catches these on sight. Everyone else has to dig in, and that uneven experience is the whole case for a shared review standard.</p>
+      <p class="notes">The framing point: experience is unevenly distributed. Long-tenured IFI devs spot these instantly, newer folks have to dig. That's the bridge back to "make review repeatable." Rule of thumb to say out loud: the more confident and unfamiliar the output, the harder you verify. PLACEHOLDER: drop in 1 to 2 real war stories from our codebase to make it land.</p>
+    </section>
+
+    <section class="slide">
+      <h2>Next: we build</h2>
+      <p>The next session wires all of this into a real repo:</p>
+      <ul>
+        <li>Set the intern's boundaries.</li>
+        <li>Structure the repo with skills, rules, and prompts.</li>
+        <li>Plan and ship a real ticket, and bound its scope live.</li>
+      </ul>
+      <p class="hint">Questions before we open the editor?</p>
+    </section>
+
+  </div>
+  <script src="deck.js"></script>
+</body>
+</html>
