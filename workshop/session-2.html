@@ -3,15 +3,14 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Session 2 Build-Along: ClaimsChat</title>
+  <title>Demo App: ClaimsChat</title>
   <link rel="stylesheet" href="deck.css" />
 </head>
 <body>
   <div class="deck">
 
     <section class="slide title active">
-      <div class="eyebrow">Session 2 · 100 min · Build-along</div>
-      <h1>Build-Along: ClaimsChat</h1>
+      <h1>Demo App: ClaimsChat</h1>
       <p class="subtitle">Structure a real repo for AI, then plan and ship a ticket end-to-end.</p>
       <p class="muted">Follow along in your own clone.</p>
     </section>
@@ -20,7 +19,7 @@
       <h2>What we'll do</h2>
       <ul>
         <li>Configure VS Code + Copilot and set the agent's boundaries.</li>
-        <li>Structure the repo for AI: skills, rules, commands, prompts.</li>
+        <li>Structure the repo for AI: instructions, prompts, skills, agents.</li>
         <li>Analyze an unfamiliar codebase and manage context.</li>
         <li>Plan a ticket, bound its scope, and build it end-to-end.</li>
         <li>Review with a shared standard, then bank the gap wins.</li>
@@ -116,7 +115,7 @@
         <li><strong>UI</strong>: a toggle + an "excluded" badge.</li>
         <li><strong>Tests</strong>: excluded docs stay out; the flag survives re-seeding.</li>
       </ol>
-      <p class="notes">The seeder step is the planted review beat: a naive impl clobbers the toggle every restart. The seam step is the teachable boundary: we scope data, we don't rewrite the ranking algorithm. Keep a reference solution branch handy as a safety net.</p>
+      <p class="notes">The seeder step is the planted review beat: a naive impl clobbers the toggle every restart. The seam step is the teachable boundary: we scope data, we don't rewrite the ranking algorithm. Keep your private rehearsal steps handy as a safety net.</p>
     </section>
 
     <section class="slide">
@@ -135,7 +134,7 @@
       <div class="cards">
         <div class="card"><h3>Tests</h3><p><code>/generate-tests</code> for a service, the win you said you skip most.</p></div>
         <div class="card"><h3>Release notes</h3><p><code>/release-notes</code> from the git log we just created.</p></div>
-        <div class="card"><h3>Infra/scripts</h3><p><code>/scaffold-ci</code>, reuse the CI we already wrote.</p></div>
+        <div class="card"><h3>Infra/scripts</h3><p><code>/scaffold-ci</code> to scaffold a CI workflow from scratch.</p></div>
       </div>
       <p class="notes">These three are the survey's "whitespace": mostly Never today, explicitly wanted. Quick wins they can take back Monday.</p>
     </section>

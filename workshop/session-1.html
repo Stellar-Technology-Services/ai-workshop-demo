@@ -3,14 +3,13 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Session 1: How Do I Use AI for Coding?</title>
+  <title>How Do I Use AI for Coding?</title>
   <link rel="stylesheet" href="deck.css" />
 </head>
 <body>
   <div class="deck">
 
     <section class="slide title active">
-      <div class="eyebrow">Session 1 · 45 min</div>
       <h1>How Do I Use AI for Coding?</h1>
       <p class="subtitle">Mindset and workflow for a room that already ships with AI.</p>
     </section>
@@ -101,7 +100,7 @@
         <li>Stale or contradictory context produces confident, wrong answers. Curate it like you'd curate a brief.</li>
         <li>Long threads rot. When a session fills with dead ends, a fresh start with a tight brief beats nursing the wreck.</li>
       </ul>
-      <p class="muted">We'll set standing context with rules and instructions files in the next session.</p>
+      <p class="muted">We'll set standing context with instructions files in the next session.</p>
       <p class="notes">Deeper than "point it at files." The real ideas: attention is a budget, you are the model's persistent memory, and standing vs task context is the distinction that pays off once you structure a repo (next session).</p>
     </section>
 
@@ -120,7 +119,7 @@
 
     <section class="slide">
       <h2>Be the adult in the room</h2>
-      <p>AI is great at writing code. It has <strong>no concept of scope creep.</strong></p>
+      <p>AI is good at writing code. It has <strong>no concept of scope creep.</strong></p>
       <ul>
         <li>It notices what's "missing," what "could" be nice, what it "could" refactor next door.</li>
         <li>It optimizes for being helpful, not for shipping the smallest correct change.</li>
@@ -135,7 +134,6 @@
       <p>The old advice (commit often, small branches) still holds. Here's what actually changes with AI:</p>
       <ul>
         <li><strong>Review the diff, not the chat.</strong> The agent's summary is a claim. The diff is the truth.</li>
-        <li>Keep changes <strong>bisectable</strong>: a bad AI change should be one clean revert, not an archaeology dig.</li>
         <li><strong>Guard the irreversible actions.</strong> Force-pushes, history rewrites, hard resets, and committed secrets are hard or impossible to undo. Make the agent ask first.</li>
         <li>Branches make experiments <strong>disposable</strong>: run an approach, keep the winner, throw the rest away.</li>
       </ul>
@@ -144,7 +142,7 @@
 
     <section class="slide">
       <h2>Make review repeatable</h2>
-      <p>Today, review quality rides on one person's experience and memory.</p>
+      <p>Today, a review is only as good as whoever happens to run it.</p>
       <ul>
         <li>That doesn't transfer: to teammates, to new hires, to the next team, or to you in six months.</li>
         <li>Package the review instincts into <strong>shared, runnable standards</strong> so the review is the same no matter who runs it.</li>
@@ -166,7 +164,7 @@
         </tbody>
       </table>
       <p>A veteran who knows this code catches these on sight. Everyone else has to dig in, and that uneven experience is the whole case for a shared review standard.</p>
-      <p class="notes">The framing point: experience is unevenly distributed. Long-tenured IFI devs spot these instantly, newer folks have to dig. That's the bridge back to "make review repeatable." Rule of thumb to say out loud: the more confident and unfamiliar the output, the harder you verify. PLACEHOLDER: drop in 1 to 2 real war stories from our codebase to make it land.</p>
+      <p class="notes">The framing point: experience is unevenly distributed. Long-tenured IFI devs spot these instantly, newer folks have to dig. That's the bridge back to "make review repeatable." Rule of thumb to say out loud: the more confident and unfamiliar the output, the harder you verify.</p>
     </section>
 
     <section class="slide">
@@ -174,8 +172,9 @@
       <p>The next session wires all of this into a real repo:</p>
       <ul>
         <li>Set the intern's boundaries.</li>
-        <li>Structure the repo with skills, rules, and prompts.</li>
-        <li>Plan and ship a real ticket, and bound its scope live.</li>
+        <li>Structure the repo with instructions, prompts, skills, and agents.</li>
+        <li>Analyze an unfamiliar codebase, then plan and ship a real ticket, bounding its scope live.</li>
+        <li>Review to a shared standard and bank the quick wins: tests, CI, release notes.</li>
       </ul>
       <p class="hint">Questions before we open the editor?</p>
     </section>
