@@ -1,0 +1,40 @@
+{
+  "servers": {
+
+    // ── GitHub MCP ───────────────────────────────────────────────────────────
+    // Requires: VS Code + GitHub Copilot signed in (OAuth, no token needed).
+    // Read-only toolset: repos, issues, pull_requests.
+    // Write tools (create PR, post comments, push) are NOT in the toolset
+    // so the agent cannot use them even if asked.
+    //
+    // Trust boundary: agents may READ issues to populate /plan-feature context.
+    // They may NOT write back to the repo via this MCP server.
+    // See docs/adr/004-mcp-trust-boundaries.md.
+    "github": {
+      "type": "http",
+      "url": "https://api.githubcopilot.com/mcp/"
+    },
+
+    // ── SQLite MCP ───────────────────────────────────────────────────────────
+    // Requires: Python + uv installed  →  brew install uv
+    // Runs mcp-server-sqlite via uvx (no manual install needed).
+    //
+    // Pointed at the LOCAL DEV database only (ClaimsChat.db, created on first run).
+    // Never point this at a production database.
+    //
+    // Agents use this to inspect the live schema before generating migrations,
+    // or to verify that the seeded documents are present. SELECT queries are
+    // prompted per call; INSERT/UPDATE/DELETE/DDL are blocked by the permission
+    // rules in .vscode/settings.json.
+    "sqlite": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "mcp-server-sqlite",
+        "--db-path",
+        "${workspaceFolder}/src/ClaimsChat/ClaimsChat.db"
+      ]
+    }
+
+  }
+}

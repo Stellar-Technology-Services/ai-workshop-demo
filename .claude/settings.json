@@ -1,0 +1,89 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+
+  "permissions": {
+    "defaultMode": "default",
+
+    "allow": [
+      "Bash(echo *)",
+      "Bash(ls *)",
+      "Bash(ls)",
+      "Bash(cat *)",
+      "Bash(pwd)",
+      "Bash(cd *)",
+      "Bash(type *)",
+
+      "Bash(dotnet build *)",
+      "Bash(dotnet test *)",
+      "Bash(dotnet run *)",
+      "Bash(dotnet restore *)",
+      "Bash(dotnet tool restore)",
+      "Bash(dotnet ef migrations list *)",
+      "Bash(dotnet ef migrations script *)",
+      "Bash(dotnet --version)",
+      "Bash(dotnet --info)",
+
+      "Bash(git status)",
+      "Bash(git diff *)",
+      "Bash(git log *)",
+      "Bash(git show *)",
+      "Bash(git branch *)",
+      "Bash(git fetch *)",
+      "Bash(git ls-files *)",
+      "Bash(git --version)",
+
+      "Read",
+      "Glob",
+      "Grep"
+    ],
+
+    "deny": [
+      "Bash(rm -rf *)",
+      "Bash(rm -r *)",
+      "Bash(rm -f *)",
+      "Bash(rmdir *)",
+
+      "Bash(curl *)",
+      "Bash(wget *)",
+      "Bash(nc *)",
+      "Bash(netcat *)",
+
+      "Bash(eval *)",
+      "Bash(exec *)",
+      "Bash(source *)",
+
+      "Bash(chmod *)",
+      "Bash(chown *)",
+      "Bash(sudo *)",
+
+      "Bash(git push --force*)",
+      "Bash(git push -f *)",
+      "Bash(git reset --hard *)",
+      "Bash(git clean -fd *)",
+
+      "Bash(dotnet ef database drop *)",
+      "Bash(dotnet ef database drop)",
+
+      "Bash(dotnet nuget push *)",
+
+      "mcp__sqlite__write_query",
+      "mcp__sqlite__create_table",
+      "mcp__github__create_or_update_file",
+      "mcp__github__push_files",
+      "mcp__github__create_pull_request",
+      "mcp__github__merge_pull_request",
+      "mcp__github__create_issue",
+      "mcp__github__update_issue",
+      "mcp__github__add_issue_comment",
+      "mcp__github__create_pull_request_review",
+
+      "Read(./.env)",
+      "Read(./.env.*)",
+      "Read(./secrets/**)",
+      "Read(./src/ClaimsChat/appsettings.Development.json)",
+      "Read(~/.ssh/**)",
+      "Read(~/.aws/**)",
+      "Read(~/.azure/**)"
+    ]
+  }
+}

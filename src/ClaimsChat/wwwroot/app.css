@@ -235,6 +235,33 @@ body {
     letter-spacing: 0.03em;
 }
 
+.retrieval-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.1rem 0.5rem;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.badge.included {
+    background: #dafbe1;
+    color: #1a7f37;
+}
+
+.badge.excluded {
+    background: #ffebe9;
+    color: #cf222e;
+}
+
 .doc-body {
     background: #f6f8fa;
     border: 1px solid #e1e4e8;

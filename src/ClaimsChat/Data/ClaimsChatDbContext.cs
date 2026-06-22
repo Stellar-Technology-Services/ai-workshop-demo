@@ -20,5 +20,11 @@ public class ClaimsChatDbContext : DbContext
         modelBuilder.Entity<Document>()
             .HasIndex(d => d.FileName)
             .IsUnique();
+
+        // NOT NULL with a SQL-level default so existing rows become eligible when
+        // the column is added. Keep this aligned with the migration's defaultValue.
+        modelBuilder.Entity<Document>()
+            .Property(d => d.IncludedInRetrieval)
+            .HasDefaultValue(true);
     }
 }

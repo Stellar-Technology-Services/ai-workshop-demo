@@ -26,8 +26,14 @@ public sealed class LexicalDocumentContextProvider : IDocumentContextProvider
         }
 
         await using var db = await _factory.CreateDbContextAsync(cancellationToken);
+
+        // DATA-SCOPE SEAM (app concern, not the ranking algorithm): only documents the
+        // user has marked eligible reach the box. This filters *what* is ranked; the
+        // ranking, segmentation, prompt, and AI call below are unchanged. See the
+        // IncludedInRetrieval flag on Document and copilot-instructions.md.
         var documents = await db.Documents
             .AsNoTracking()
+            .Where(d => d.IncludedInRetrieval)
             .ToListAsync(cancellationToken);
 
         var bodyById = documents.ToDictionary(d => d.Id, d => d.Body);
