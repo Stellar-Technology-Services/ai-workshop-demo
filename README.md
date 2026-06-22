@@ -1,11 +1,36 @@
 # ClaimsChat
 
-A small demo app for the AI-assisted development workshop: a "chat with claims
-documents" experience built in C# / .NET. See [`SPEC.md`](SPEC.md) for scope and
-[`plan/tickets.md`](plan/tickets.md) for the build plan.
+Materials for a hands-on **AI-assisted development workshop**. The repo is three things:
+
+- **A demo app** — ClaimsChat, a "chat with claims documents" experience in C# / .NET
+  (Blazor Server, EF Core + SQLite). See [`SPEC.md`](SPEC.md) for scope and
+  [`plan/tickets.md`](plan/tickets.md) for the build plan.
+- **A reusable AI-artifacts library** — repo instructions, prompts, skills, and a custom
+  agent for GitHub Copilot, meant to be copied into your own stack. See
+  [What's in here](#whats-in-here).
+- **Slide decks** — the two presented sessions, as standalone HTML in [`workshop/`](workshop/).
 
 > This repo is a **teaching vehicle**, not a production app. The AI client and
 > retrieval are a sealed box; the ordinary app around them is the teachable surface.
+
+## What's in here
+
+The reusable AI artifacts are authored for **GitHub Copilot** but follow the open
+[Agent Skills](https://agentskills.io/home) shape, so the bodies port to Cursor and
+Claude Code with a different wrapper. See [`resources.md`](resources.md) for links.
+
+- **[`.github/copilot-instructions.md`](.github/copilot-instructions.md)** — repo-wide
+  instructions the agent loads on every request (stack, conventions, the sealed box).
+- **[`.github/prompts/`](.github/prompts)** — reusable prompts you invoke as slash
+  commands: `generate-tests`, `plan-feature`, `release-notes`, `scaffold-ci`, and
+  `challenge` (a hostile devil's-advocate review of your latest change).
+- **[`.github/skills/`](.github/skills)** — skills the agent loads when a task matches:
+  `code-review`, `review-sql`, `explain-legacy`, `pushback`, `quality-audit`,
+  `work-handoff`, `create-issue`, `depth-ui`, and `write-a-skill` (authoring new skills).
+- **[`.github/agents/`](.github/agents)** — a custom `brownfield-discovery` agent for
+  exploring an unfamiliar codebase read-only.
+- **[`workshop/`](workshop)** — the two session decks as standalone HTML (open in a browser).
+- **[`legacy/`](legacy)** — a standalone VB.NET snippet used as an explain/translate target.
 
 ## Workshop prerequisites
 
@@ -75,7 +100,7 @@ cp src/ClaimsChat/appsettings.Development.example.json src/ClaimsChat/appsetting
 ```json
 {
   "AzureOpenAI": {
-    "Endpoint": "https://ifi-workshop-resource.cognitiveservices.azure.com/",
+    "Endpoint": "https://<your-resource>.cognitiveservices.azure.com/",
     "Deployment": "<your-gpt-5.4-deployment-name>",
     "Key": "<paste-key-at-workshop-time>"
   }
@@ -108,7 +133,16 @@ ai-workshop-demo/
 ├─ global.json            # pins the .NET 10 SDK
 ├─ ClaimsChat.sln
 ├─ SPEC.md                # what we're building and why
-├─ plan/tickets.md        # the build plan (T1..T6)
+├─ resources.md           # links for going deeper / other harnesses
+├─ .github/               # the reusable AI-artifacts library
+│  ├─ copilot-instructions.md
+│  ├─ prompts/            # slash-command prompts
+│  ├─ skills/             # model/user-invoked skills
+│  └─ agents/             # custom agents
+├─ workshop/              # session slide decks (standalone HTML)
+├─ legacy/                # VB.NET snippet (explain/translate target)
+├─ plan/                  # build plan and tickets
+├─ tests/ClaimsChat.Tests/ # xUnit tests
 └─ src/ClaimsChat/        # the Blazor Server app
    ├─ Data/               # EF Core DbContext + migrations
    ├─ Services/SealedBox/ # AI client + retrieval (not exercise targets)
