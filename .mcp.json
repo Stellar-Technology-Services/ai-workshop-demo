@@ -14,7 +14,7 @@
       "args": [
         "mcp-server-sqlite",
         "--db-path",
-        "/Users/vvs/github/ai-workshop-demo/src/ClaimsChat/ClaimsChat.db"
+        "src/ClaimsChat/ClaimsChat.db"
       ]
     }
   }
