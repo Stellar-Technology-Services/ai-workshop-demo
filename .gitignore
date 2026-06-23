@@ -7,10 +7,16 @@ artifacts/
 
 # IDE / tooling
 .vs/
-.vscode/
+.vscode/*
+# ...but track the workshop's MCP + Copilot-approval teaching config (see docs/adr/004)
+!.vscode/mcp.json
+!.vscode/settings.json
 *.user
 *.suo
 *.userprefs
+
+# Claude Code per-machine overrides (never committed)
+.claude/settings.local.json
 
 # .NET
 *.nupkg
@@ -27,3 +33,4 @@ appsettings.Development.json
 # OS cruft
 .DS_Store
 Thumbs.db
+.env

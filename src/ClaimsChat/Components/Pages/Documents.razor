@@ -1,4 +1,5 @@
 @page "/documents"
+@rendermode InteractiveServer
 @using ClaimsChat.Data
 @using Microsoft.EntityFrameworkCore
 @inject IDbContextFactory<ClaimsChatDbContext> DbFactory
@@ -20,12 +21,17 @@ else if (_documents.Count == 0)
 }
 else
 {
-    <p class="muted">@_documents.Count document(s) seeded from the Documents folder.</p>
+    <p class="muted">
+        @_documents.Count document(s) seeded from the Documents folder.
+        <strong>In Retrieval</strong> controls whether the chat can ground answers in a
+        document — the human checkpoint for what reaches the model.
+    </p>
     <table class="doc-table">
         <thead>
             <tr>
                 <th>Title</th>
                 <th>Claim Number</th>
+                <th>In Retrieval</th>
             </tr>
         </thead>
         <tbody>
@@ -34,6 +40,16 @@ else
                 <tr>
                     <td><a href="@($"documents/{doc.Id}")">@doc.Title</a></td>
                     <td>@(doc.ClaimNumber ?? "—")</td>
+                    <td>
+                        <label class="retrieval-toggle">
+                            <input type="checkbox"
+                                   checked="@doc.IncludedInRetrieval"
+                                   @onchange="e => ToggleRetrievalAsync(doc.Id, (bool)e.Value!)" />
+                            <span class="badge @(doc.IncludedInRetrieval ? "included" : "excluded")">
+                                @(doc.IncludedInRetrieval ? "Included" : "Excluded")
+                            </span>
+                        </label>
+                    </td>
                 </tr>
             }
         </tbody>
@@ -45,9 +61,31 @@ else
 
     protected override async Task OnInitializedAsync()
     {
+        await LoadDocumentsAsync();
+    }
+
+    private async Task LoadDocumentsAsync()
+    {
         await using var db = await DbFactory.CreateDbContextAsync();
         _documents = await db.Documents
             .OrderBy(d => d.Title)
             .ToListAsync();
+    }
+
+    // App-layer write: scope what data reaches the sealed box by toggling a
+    // document's eligibility. A short-lived tracked context per unit of work,
+    // matching how this page reads (IDbContextFactory, not a circuit-scoped context).
+    private async Task ToggleRetrievalAsync(int documentId, bool included)
+    {
+        await using var db = await DbFactory.CreateDbContextAsync();
+        var doc = await db.Documents.FindAsync(documentId);
+        if (doc is null)
+        {
+            return;
+        }
+
+        doc.IncludedInRetrieval = included;
+        await db.SaveChangesAsync();
+        await LoadDocumentsAsync();
     }
 }

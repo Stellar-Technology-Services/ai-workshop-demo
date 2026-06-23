@@ -1,0 +1,128 @@
+{
+  // ─────────────────────────────────────────────────────────────────────────
+  // AI AGENT COMMAND CONTROLS  —  GitHub Copilot in VS Code
+  // ─────────────────────────────────────────────────────────────────────────
+  //
+  // This file demonstrates how to configure which terminal commands the
+  // Copilot agent can run automatically and which require your explicit
+  // approval. It ships with the ClaimsChat workshop repo so you can see a
+  // working example and adapt it for your own projects. It is the GitHub
+  // Copilot counterpart to .claude/settings.json (Claude Code).
+  //
+  // Docs: https://code.visualstudio.com/docs/agents/approvals
+  // ─────────────────────────────────────────────────────────────────────────
+
+  // ── 1. PERMISSION LEVEL ──────────────────────────────────────────────────
+  //
+  //   "defaultApprovals"  — use the per-tool, per-command rules below
+  //                         (recommended; agents ask before anything risky)
+  //   "bypassApprovals"   — auto-approves everything; skips all dialogs
+  //   "autopilot"         — auto-approves and auto-answers clarifying Qs
+  //
+  // NEVER set bypassApprovals or autopilot in a shared project file.
+  "chat.permissions.default": "defaultApprovals",
+
+  // ── 2. TERMINAL COMMAND AUTO-APPROVAL ────────────────────────────────────
+  //
+  // Each key is an exact command name (matched against the first token) OR a
+  // regex wrapped in /slashes/ (matched against the full subcommand).
+  // Value true = auto-approve; false = always require manual approval.
+  //
+  // For compound commands (&&, ||, ;, |) EVERY subcommand must match a true
+  // rule — a single false match blocks the whole compound. This prevents
+  // tricks like "echo hello && rm -rf .".
+  "chat.tools.terminal.autoApprove": {
+
+    // ── DENY: always require approval (overrides any allow rule) ────────────
+
+    // Destructive filesystem operations
+    "rm":    false,
+    "rmdir": false,
+    "del":   false,
+
+    // Process control
+    "kill": false,
+
+    // Network access — risk of data exfiltration or pulling malicious content
+    "curl": false,
+    "wget": false,
+
+    // Arbitrary code execution and privilege changes
+    "eval":  false,
+    "chmod": false,
+    "chown": false,
+
+    // PowerShell equivalent (case-insensitive regex)
+    "/^Remove-Item\\b/i": false,
+
+    // Workshop-specific: never let the agent drop the SQLite database.
+    // "dotnet ef database drop" is irreversible during a live session.
+    "/^dotnet\\s+ef\\s+database\\s+drop\\b/i": false,
+
+    // Prevent force-pushing — a common source of irreversible damage
+    "/^git\\s+push\\b.*--force/i": false,
+
+    // Prevent publishing NuGet packages without explicit review
+    "/^dotnet\\s+nuget\\s+push\\b/i": false,
+
+    // ── ALLOW: run without prompting (no lasting side-effects) ───────────────
+
+    // Basic shell inspection
+    "echo": true,
+    "ls":   true,
+    "cat":  true,
+    "pwd":  true,
+    "cd":   true,
+    "type": true,
+
+    // .NET / C# build and test (ClaimsChat stack)
+    "/^dotnet\\s+build\\b/i":   true,
+    "/^dotnet\\s+test\\b/i":    true,
+    "/^dotnet\\s+run\\b/i":     true,
+    "/^dotnet\\s+restore\\b/i": true,
+
+    // EF Core read-only commands (migrations list/script are safe to inspect)
+    "/^dotnet\\s+ef\\s+migrations\\s+(list|script)\\b/i": true,
+
+    // Read-only git operations
+    "/^git\\s+(status|diff|log|show|branch|remote|fetch|ls-files)\\b/": true,
+
+    // Reading environment / platform info
+    "dotnet --version": true,
+    "git --version": true
+  },
+
+  // ── 3. MASTER SWITCHES ───────────────────────────────────────────────────
+
+  // Turn the entire auto-approve system on (true) or off (false).
+  "chat.tools.terminal.enableAutoApprove": true,
+
+  // When false (recommended): keep VS Code's built-in default deny rules
+  // (rm, del, curl, etc.) as a safety baseline even if not listed above.
+  "chat.tools.terminal.ignoreDefaultAutoApproveRules": false,
+
+  // Require approval for terminal commands that write files outside the workspace.
+  "chat.tools.terminal.blockDetectedFileWrites": "outsideWorkspace",
+
+  // ── 4. AGENT SANDBOXING (Preview) ────────────────────────────────────────
+  //
+  //   "off"           — no sandboxing
+  //   "allowNetwork"  — filesystem isolation ON, network unrestricted
+  //                     (good dev default: protects ~/.ssh etc.)
+  //   "on"            — full isolation: filesystem + network both blocked
+  //                     unless explicitly allowed below
+  //
+  // macOS: works out of the box. Linux/WSL2: needs bubblewrap + socat.
+  "chat.agent.sandbox.enabled": "allowNetwork"
+
+  // ── 5. NETWORK FILTERING (optional) ──────────────────────────────────────
+  // Has effect only when sandbox.enabled is "on". To activate domain
+  // restrictions, set sandbox to "on" and uncomment:
+  //
+  // "chat.agent.networkFilter": true,
+  // "chat.agent.allowedNetworkDomains": [
+  //   "*.nuget.org",                         // NuGet package restore
+  //   "api.github.com",                      // GitHub MCP / API calls
+  //   "*.cognitiveservices.azure.com"        // Azure OpenAI endpoint
+  // ]
+}

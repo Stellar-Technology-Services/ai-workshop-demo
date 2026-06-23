@@ -1,7 +1,10 @@
 @page "/chat"
+@using ClaimsChat.Data
 @using ClaimsChat.Services.SealedBox
 @using Markdig
+@using Microsoft.EntityFrameworkCore
 @inject IGroundedChatService ChatService
+@inject IDbContextFactory<ClaimsChatDbContext> DbFactory
 
 <PageTitle>Chat — ClaimsChat</PageTitle>
 
@@ -106,6 +109,18 @@
         var answer = new Entry { IsUser = false, Text = string.Empty, IsStreaming = true };
         _entries.Add(answer);
 
+        // App-layer guard (not the sealed box): if the user has excluded every
+        // document from retrieval, the model has nothing to ground in. Say so
+        // clearly and point them at the toggle, rather than calling the model.
+        if (!await AnyDocumentEligibleAsync())
+        {
+            answer.IsStreaming = false;
+            answer.Text = "No documents are enabled for retrieval, so I have nothing to ground an answer in. "
+                + "Enable at least one document on the [Documents page](documents) and ask again.";
+            _busy = false;
+            return;
+        }
+
         try
         {
             var result = await ChatService.AskAsync(question);
@@ -134,6 +149,12 @@
             answer.IsStreaming = false;
             _busy = false;
         }
+    }
+
+    private async Task<bool> AnyDocumentEligibleAsync()
+    {
+        await using var db = await DbFactory.CreateDbContextAsync();
+        return await db.Documents.AnyAsync(d => d.IncludedInRetrieval);
     }
 
     private async Task SendSuggested(string question)

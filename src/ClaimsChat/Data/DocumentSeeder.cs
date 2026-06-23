@@ -35,6 +35,9 @@ public static class DocumentSeeder
 
             if (existingByName.TryGetValue(fileName, out var existing))
             {
+                // Re-seed updates only the fields parsed from the file. IncludedInRetrieval
+                // is deliberately left untouched so a user's eligibility choice (toggled on
+                // the Documents page) survives restarts — do not clobber it here.
                 if (existing.Body != body || existing.Title != title || existing.ClaimNumber != claimNumber)
                 {
                     existing.Body = body;
